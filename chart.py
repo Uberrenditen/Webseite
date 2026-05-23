@@ -1,18 +1,19 @@
 import plotly.graph_objects as go
-import pandas as pd
-from datetime import datetime
+import yfinance as yf
 
-# Wir erstellen ein paar künstliche Aktiendaten für den Test
-data = {
-    'Date': ['2026-05-20', '2026-05-21', '2026-05-22', '2026-05-23', '2026-05-24'],
-    'Open': [150.20, 152.10, 151.00, 153.50, 156.00],
-    'High': [153.00, 154.50, 152.80, 157.00, 160.20],
-    'Low': [149.50, 150.20, 148.10, 152.00, 155.10],
-    'Close': [152.10, 151.00, 153.50, 156.00, 159.50]
-}
-df = pd.DataFrame(data)
+# 1. Echte Aktiendaten abrufen
+# 'AAPL' steht für Apple. Für Tesla nimmst du 'TSLA', für Bitcoin 'BTC-USD'
+ticker_symbol = 'AAPL' 
+ticker_data = yf.Ticker(ticker_symbol)
 
-# Hier erstellen wir den Candlestick-Chart
+# Wir holen die historischen Daten (period='6mo' bedeutet die letzten 6 Monate)
+# '1d' bedeutet eine Kerze pro Tag
+df = ticker_data.history(period='6mo', interval='1d')
+
+# Wir müssen den Index (das Datum) wieder als normale Spalte verfügbar machen
+df = df.reset_index()
+
+# 2. Den interaktiven Candlestick-Chart erstellen
 fig = go.Figure(data=[go.Candlestick(
     x=df['Date'],
     open=df['Open'], 
@@ -21,14 +22,14 @@ fig = go.Figure(data=[go.Candlestick(
     close=df['Close']
 )])
 
-# Styling: Layout anpassen und den nervigen Slider unten ausschalten
+# 3. Styling anpassen
 fig.update_layout(
-    title='Mein erster Krypto/Aktien Chart',
-    yaxis_title='Kurs in €',
-    xaxis_rangeslider_visible=False,
-    template='plotly_dark' # Dunkler Modus, sieht cooler aus!
+    title=f'Echter Live-Chart: {ticker_symbol} (Letzte 6 Monate)',
+    yaxis_title='Kurs in USD',
+    xaxis_rangeslider_visible=False, # Entfernt den Schieberegler unten für mehr Platz
+    template='plotly_dark'           # Schicker Dark Mode
 )
 
-# Das Wichtigste: Wir speichern das Ganze als fertige HTML-Datei ab
+# 4. Als index.html für deine Webseite speichern
 fig.write_html("index.html")
-print("Der Chart wurde erfolgreich als 'index.html' gespeichert!")
+print(f"Der echte Chart für {ticker_symbol} wurde erfolgreich als 'index.html' gespeichert!")
