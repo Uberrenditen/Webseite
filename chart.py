@@ -20,7 +20,7 @@ fig = go.Figure(data=[go.Candlestick(
 
 # 3. Styling anpassen
 fig.update_layout(
-    title=f'Echter Live-Chart: {ticker_symbol} (Letzte 6 Monate)',
+    title=f'Live-Chart: {ticker_symbol} (Letzte 6 Monate)',
     yaxis_title='Kurs in USD',
     xaxis_rangeslider_visible=False,
     template='plotly_dark'
