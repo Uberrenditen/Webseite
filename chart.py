@@ -28,4 +28,4 @@ fig.update_layout(
 
 # 4. Als index.html für deine Webseite speichern
 fig.write_html("index.html")
-print(f"Der echte Chart für {ticker_symbol} wurde erfolgreich als 'index.html' gespeichert!")
+print(f"Chart für {ticker_symbol} wurde erfolgreich als 'index.html' gespeichert!")
