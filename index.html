@@ -15,35 +15,43 @@
         }
         header {
             background-color: #151a24;
-            padding: 15px 20px;
+            padding: 20px;
             border-bottom: 1px solid #1f2633;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            text-align: center;
         }
-        header h1 { margin: 0; color: #00ff88; font-size: 24px; letter-spacing: 1px; }
+        header h1 { margin: 0; color: #00ff88; font-size: 28px; letter-spacing: 1px; }
         
-        /* Die neue Grid-Leiste für die Markt-Karten */
-        .ticker-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-            padding: 15px 20px;
+        /* Das große Ticker-System für alle Kategorien */
+        .master-ticker {
             background-color: #0e121a;
+            padding: 15px 20px;
             border-bottom: 1px solid #1f2633;
+        }
+        .category-section {
+            margin-bottom: 15px;
+        }
+        .category-section h3 {
+            margin: 0 0 8px 0;
+            font-size: 13px;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .ticker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
         }
         .market-card {
             background-color: #151a24;
             border: 1px solid #242c3d;
             border-radius: 6px;
             padding: 10px 14px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         .market-name {
             font-size: 12px;
             font-weight: bold;
             color: #8f9cae;
-            text-transform: uppercase;
             margin-bottom: 4px;
         }
         .market-details {
@@ -58,8 +66,6 @@
         .market-change {
             font-size: 13px;
             font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 4px;
         }
         .pos { color: #00ff88; }
         .neg { color: #ff3366; }
@@ -67,7 +73,7 @@
         /* Haupt-Inhalt */
         .container {
             display: flex;
-            max-width: 1500px;
+            max-width: 1600px;
             margin: 20px auto;
             padding: 0 20px;
             gap: 20px;
@@ -92,40 +98,144 @@
         <h1>ÜBERRENDITEN.DE</h1>
     </header>
 
-    <div class="ticker-container">
-        
-            <div class="market-card">
-                <div class="market-name">DAX</div>
-                <div class="market-details">
-                    <span class="market-price">24.888,56</span>
-                    <span class="market-change pos">+1.15%</span>
+    <div class="master-ticker">
+        <div class="category-section"><h3>Deutsche Indizes</h3><div class="ticker-grid">
+                <div class="market-card">
+                    <div class="market-name">DAX</div>
+                    <div class="market-details">
+                        <span class="market-price">24.888,56</span>
+                        <span class="market-change pos">+1.15%</span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="market-card">
-                <div class="market-name">S&P 500</div>
-                <div class="market-details">
-                    <span class="market-price">7.473,47</span>
-                    <span class="market-change pos">+0.37%</span>
+                
+                <div class="market-card">
+                    <div class="market-name">MDAX</div>
+                    <div class="market-details">
+                        <span class="market-price">32.108,27</span>
+                        <span class="market-change pos">+0.95%</span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="market-card">
-                <div class="market-name">Gold</div>
-                <div class="market-details">
-                    <span class="market-price">4.521,00 USD</span>
-                    <span class="market-change neg">-0.41%</span>
+                
+                <div class="market-card">
+                    <div class="market-name">TecDAX</div>
+                    <div class="market-details">
+                        <span class="market-price">4.036,09</span>
+                        <span class="market-change pos">+1.95%</span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="market-card">
-                <div class="market-name">Öl Brent</div>
-                <div class="market-details">
-                    <span class="market-price">103,54 USD</span>
-                    <span class="market-change pos">+0.94%</span>
+                
+                <div class="market-card">
+                    <div class="market-name">SDAX</div>
+                    <div class="market-details">
+                        <span class="market-price">18.736,95</span>
+                        <span class="market-change pos">+1.26%</span>
+                    </div>
                 </div>
-            </div>
-            
+                </div></div><div class="category-section"><h3>Internationale Märkte</h3><div class="ticker-grid">
+                <div class="market-card">
+                    <div class="market-name">Eurostoxx</div>
+                    <div class="market-details">
+                        <span class="market-price">6.019,45</span>
+                        <span class="market-change pos">+0.99%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">DowJones</div>
+                    <div class="market-details">
+                        <span class="market-price">50.579,70</span>
+                        <span class="market-change pos">+0.58%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">US Tech 100</div>
+                    <div class="market-details">
+                        <span class="market-price">29.481,64 USD</span>
+                        <span class="market-change pos">+0.42%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">S&P 500</div>
+                    <div class="market-details">
+                        <span class="market-price">7.473,47 USD</span>
+                        <span class="market-change pos">+0.37%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">Nikkei</div>
+                    <div class="market-details">
+                        <span class="market-price">63.339,07</span>
+                        <span class="market-change pos">+2.68%</span>
+                    </div>
+                </div>
+                </div></div><div class="category-section"><h3>Rohstoffe</h3><div class="ticker-grid">
+                <div class="market-card">
+                    <div class="market-name">Gold</div>
+                    <div class="market-details">
+                        <span class="market-price">4.521,00 USD</span>
+                        <span class="market-change neg">-0.41%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">Silber</div>
+                    <div class="market-details">
+                        <span class="market-price">75,89 USD</span>
+                        <span class="market-change neg">-0.68%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">Öl Brent</div>
+                    <div class="market-details">
+                        <span class="market-price">103,54 USD</span>
+                        <span class="market-change pos">+0.94%</span>
+                    </div>
+                </div>
+                </div></div><div class="category-section"><h3>Kryptowährungen</h3><div class="ticker-grid">
+                <div class="market-card">
+                    <div class="market-name">Bitcoin</div>
+                    <div class="market-details">
+                        <span class="market-price">76.578,59 USD</span>
+                        <span class="market-change pos">+0.00%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">Ethereum</div>
+                    <div class="market-details">
+                        <span class="market-price">2.113,56 USD</span>
+                        <span class="market-change pos">+0.00%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">Solana</div>
+                    <div class="market-details">
+                        <span class="market-price">85,60 USD</span>
+                        <span class="market-change pos">+0.00%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">XRP</div>
+                    <div class="market-details">
+                        <span class="market-price">1,3575 USD</span>
+                        <span class="market-change pos">+0.00%</span>
+                    </div>
+                </div>
+                
+                <div class="market-card">
+                    <div class="market-name">Dogecoin</div>
+                    <div class="market-details">
+                        <span class="market-price">0,1028 USD</span>
+                        <span class="market-change pos">+0.00%</span>
+                    </div>
+                </div>
+                </div></div>
     </div>
 
     <div class="container">
@@ -135,7 +245,7 @@
                 308.82 USD <span style="color: #00ff88; font-size: 18px;">1.26%</span>
             </div>
             <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="e7a23f1f-912e-47f4-bdf5-f30e5c99ed32" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e7a23f1f-912e-47f4-bdf5-f30e5c99ed32")) {                    Plotly.newPlot(                        "e7a23f1f-912e-47f4-bdf5-f30e5c99ed32",                        [{"close":{"dtype":"f8","bdata":"AAAAoIg2cUAAAABATUdxQAAAAKCQUHFAAAAAgFNlcUAAAABAM6lxQAAAAGCM2nFAAAAAAPi5cUAAAAAA34JxQAAAAEA1ZHFAAAAAoP5VcUAAAADgp0pxQAAAAEA1ZHFAAAAAADtYcUAAAAAAOVxxQAAAAGCgGXFAAAAAoJwhcUAAAADAX\u002fVwQAAAAMD2+nBAAAAAoJkScUAAAADgeudwQAAAAMCt\u002fXBAAAAA4NUUcUAAAADASQ5xQAAAAKAJFHFAAAAAQC0JcUAAAACAsfVwQAAAAIAe6HBAAAAAADuscEAAAADA+V1wQAAAAECOPXBAAAAAQPQocEAAAABgOS5wQAAAACBHPHBAAAAA4A1JcEAAAACApTdwQAAAAOCyG3BAAAAAwMvhb0AAAACgwsduQAAAAKAa5m5AAAAAYHb8bkAAAACAj\u002fJuQAAAAMD23W9AAAAAIKgccEAAAADA3P5vQAAAAADRHHBAAAAAQPsvcEAAAAAAJthwQAAAAECvz3BAAAAAwKI\u002fcUAAAACgXzZxQAAAAOCqWXFAAAAAIOAlcUAAAABg2RZxQAAAAEDxM3FAAAAAYNNXcEAAAAAAbfFvQAAAAKAxenBAAAAAALWBcEAAAAAgcUVwQAAAACBihXBAAAAAoPWecEAAAACAO\u002f5wQAAAAECkH3FAAAAAIC4LcUAAAABA\u002fX5wQAAAAACfh3BAAAAAoB14cEAAAAAgdGRwQAAAAIDOQHBAAAAAYJETcEAAAACgQDpwQAAAAEBwSXBAAAAAYB5JcEAAAABAyfBvQAAAAAB5PG9AAAAAIMuSb0AAAAAg379vQAAAAOC3Nm9AAAAAIGMXb0AAAAAgYPhuQAAAAMBFaG9AAAAAYBFtb0AAAAAgZoxvQAAAAAAIlW9AAAAAgEUSb0AAAABA5cxuQAAAAODNsW9AAAAAYKHsb0AAAADg5vVvQAAAAIDyKXBAAAAAgIiob0AAAABAlipwQAAAAOAARHBAAAAAANhDcEAAAAAAYi9wQAAAAMB3KXBAAAAAwPSicEAAAABAhXJwQAAAAECz33BAAAAAQMcMcUAAAADgzJ5wQAAAAICyDnFAAAAAYNoScUAAAADA9+xwQAAAAIDRtXBAAAAAgF\u002fncEAAAADAvd5wQAAAAKCa8XBAAAAAQB1+cUAAAADgM0lxQAAAAOCxvnFAAAAAAO3zcUAAAACAzvJxQAAAAODMUHJAAAAAQOFKckAAAADAzGxyQAAAAIDrrXJAAAAAIFyjckAAAAAgrsNyQAAAAKBwnXJAAAAAIIWvckAAAAAAAORyQAAAAADXD3NAAAAAwB5Nc0A="},"high":{"dtype":"f8","bdata":"y9EFDMhHcUA8V\u002fS4wn1xQKSA+7UvcHFAOANUvLhncUCJlryRT65xQBUdG0\u002ff7XFAU2rbK1sBckAM2SpDO8NxQLFVvvLliXFA2Mqe+mtycUARESvaK3hxQKGDvwGzc3FAcV+G5iRxcUB3tAocPGtxQM1q014WenFAvMZZXdMvcUBnX4GvXTpxQGdy4Q\u002f2EXFAnY2Zz3MhcUDyrGEl9BVxQHpavi\u002fq\u002f3BA5VfGEbUucUBNIWjpvy1xQHeCXJGeHXFAjkhepyUZcUCrwvBswhJxQG9yKj8yVXFA3tv8txrwcEB9OVaU3LBwQK7Q9W0Oc3BAhdndWfIscEDXs5qeoztwQEfRM+YLTXBAzwMmGjFVcEBxXx3\u002fWVVwQG1OIiHlSHBA6uXOxrcmcEBUWMD5KMpvQDWBGvr9Ym9AtB\u002fu3RpRb0CL9vXPUR5vQEC32wNZAXBAcpMqjG1XcECRiUM+FCZwQL2k9xeyMnBAmGV7HqFWcEASw6Na0N9wQGoWP2UD9nBAdjM6UOxmcUA15S\u002f7tG9xQBcCjY45hnFAwl+pYBpfcUBG1chA3TFxQCXQvtrAfnFAWHOZoXU3cUDaWWtu0V9wQORM8um3oHBAU2sX0DCpcECM4ZLryINwQFdA6dsZiHBAv\u002f72XunScEByO9YhMSpxQFAswbL9KnFA6qrwdbE9cUDpyak28QhxQKoU6OyNpHBAD7wRjQyVcEBKGG\u002fwep5wQDjJNJYbVXBAEwCIL4IocEC4Gia2jU5wQMc6dIfQY3BAXZrgJThecECfevDoYitwQGh1TzaBAXBAo3mJbgC1b0BRoKs2pdxvQJ1ZZyyS1m9AnlDzeyRzb0DwZjtADx9vQG8Rgmyzy29AIPAX0g3Tb0DHuLotfdhvQIg9LhE3DHBAUb1\u002fjSfob0BkHhlHc1RvQJMQmKHV529AKJlLujb+b0A75JyqnfxvQEVYxO6yXnBAP0wHpNr+b0Ab4pSrLDhwQCrr6\u002f8STnBAp4x1rS1fcECWLSNODD9wQJXL268FW3BAMbeFwgilcEDNjr8SoK5wQKkxAxLKAHFAT1LGvHAgcUAEtwdByAhxQKUh5PnOF3FAd8iGLUI4cUDaXJA18AxxQOewFKzOwXBAVnnD\u002f6cPcUBD8Uf4pexwQMvkJnjvO3FA\u002fE8sLkrvcUCX7Cts8oVxQIxSleftxHFAzJgb6jz8cUDggykRxz1yQA+3JrLRZ3JAAAAAgBReckAAAADgUXRyQAAAAGC4znJAAAAAQDPHckAAAABAM\u002fNyQAAAAGCPynJAAAAAACnIckAAAADAzOxyQAAAAOCjGHNAAAAAYGZ2c0A="},"low":{"dtype":"f8","bdata":"Zi8qwVzmcEB3vLAw1StxQOuY2lzfQXFAVnV3maY3cUAEqOb9CzpxQLzKm6qxoXFAqTfh1GSscUCOCTBnLGFxQN3pkauMWHFA2nmjtzQ6cUCHeIf5gEZxQPynU2bWPnFADUz07dUUcUB\u002fJSX350RxQF2xkiVYBXFAirt+a5P0cEBQIuAkLvJwQH9zSY1Hp3BAVRnsQmTWcEAnxng+IuBwQMEEiUT20HBAgaXCmh\u002f7cEBDuwb6qQVxQFAvuPWE\u002fXBADX+uk2b8cED2rt7V7\u002fNwQFAnccQEyHBAFgHNAViacEBJtaWSJFpwQAqAHFNANXBA3o+H3Tnnb0C4U3\u002fa1fdvQCCA3RQuBXBAnZBc1JIecEBGwcUvvgNwQIvQlU8sCXBAZgSCnaHOb0CcjQS0\u002fl5uQBVExOU1l25Ax6jd6RL2bkD3EzZrPYduQNtnFdnGKm9Ai2yq1LIbcEBicu1xN8FvQHDI2MoFvm9APBPvpMt2b0BdPH8pqytwQNbnPNTRsXBA+eNOh4\u002f8cECAV0u7kgtxQNcAFKqpRnFALG5K4jL3cECY5D8qBQtxQLX2eXUoI3FA0fP+Vww\u002fcEB12gkd4OZvQCaf\u002fcLA6W9ATNzEyVVjcEBqTZI\u002f+DxwQGr+QhTCHnBANSiqbjNycEAZUKPTardwQKjKL93O7HBAVXw9u8\u002focECmDgldXmpwQJAT5ypeP3BA44fcxT8+cEA8ZKnF3lJwQBucNxY2EHBA\u002fy81zVjEb0CoSBGBSa5vQDrb0IBqC3BAm+01IPo0cEC6LhfKRb5vQOJPL2ZKKW9AoYE+y8w0b0A0Yzf1VH5vQI47gXaqGG9A5Jpc5FDibkDr4YEBwbhuQKi3xn+WQW9AKvV64j8qb0Dup\u002fIQymtvQLHPR\u002fxAUW9At2Yy4e76bkCLFhOSFqluQHCLc\u002fLr225AoN71Fxmjb0BxSfi8ak1vQIetgyyVA3BA442+sCmvbkC2m3+vswRwQMqbTZSy+m9ANQ5DQYEscEC7GJSzxwZwQCjA645AD3BAmVjRvykZcEDiju7HeFBwQEB08HuXp3BA41P5x6jgcED5rjDHfZJwQLVoamD9qXBAKFL8NWb2cEBaAvawbdZwQPvXplM3jXBAQvKTeprGcED8XxQNtaxwQMQFD5pKvnBA2pN67NFhcUBds3gttilxQExqOpTtQ3FAdSPgB\u002fuMcUA9mUBiRdhxQEwMYKS6G3JAAAAAIK4jckAAAADA9UhyQAAAAAAAWHJAAAAAgBR2ckAAAADgUYhyQAAAAGCPbnJAAAAAoJmFckAAAACgR6FyQAAAAGBmxnJAAAAAoHAdc0A="},"open":{"dtype":"f8","bdata":"Zi8qwVzmcEC+7NHpJixxQM3GNnskR3FA6gzX8+5LcUBedKRJ6VdxQA8KIluap3FAVc6iTbXacUCfP0qMK7lxQCP1geFQgHFAaddQzdNZcUDg0V6OTlpxQAAh7DLCU3FAgWdUn1FpcUBGKvhiJ1ZxQM1q014WenFAIeSkeAYFcUBOhLsLAChxQO4hzzakEXFA19+5K1P6cEBYrdnkqQVxQCCrmGtn5XBA+3aM6lv9cEBLijD6bBpxQEK+mgDzAnFAZXkHbd0EcUD6MIqi2whxQPJ\u002fYwEV\u002fHBAiY+r0zXicEDms8EBFKhwQJKGRhNka3BA6+\u002f+l7EIcEA08+2zlylwQEQOmcfeKnBAf3+y8tcjcEDATvDxIzBwQATfgJeqQnBAM9lgX78WcECRcCXFXIhvQMYrkUykB29AELdOlpwXb0ByxA9QkNtuQN2Up9NvYG9AyUHlyQcrcEDIxCFPwRJwQDEweUBYGHBAUj4lWUzWb0APaO2uwzhwQLQedIA2y3BA+eNOh4\u002f8cECS2yrj01lxQAV4mXiySXFAUvuRmHdacUBknBEQMSpxQNRxK4QnJ3FA58ESn2E1cUAB+MMiTVxwQOIf79r\u002fHHBA7sbb07d1cEDarjaCu2VwQDmafca0K3BAz5KAhPVzcEBBDd+i0LlwQGiXnjx6+HBAgOGQlSYrcUDpyak28QhxQOJxt\u002fWxYnBAT+WUxMxzcECFwy+YgIZwQNtbZp3MSHBAy3amVkUmcECJB8NYjO5vQHHLN\u002f2aFnBAB\u002fe7MZhNcEDBVNwgwCZwQOXTY7XV529ASWGQGhh8b0Dx2ITzRJdvQGm9bxe4jG9AIH+tLnQlb0CmplIzDvhuQJuhqCyPt29AakssetNDb0AnEws3t7tvQM\u002fcW+5pfG9AX87iKlK1b0BnM2bP3zpvQKbn0VbR9W5AwS8mcBO7b0D1vjWY6b5vQPJgPNxhBHBAylBCMZP9b0D4gFHSZCNwQMMZIn4vLHBAN9+d4tk7cEBb+3Pg2jdwQN\u002fWmYouMHBARgMADsIecEA+hj7O3qhwQNKdS5Rtq3BADfRiYUzhcEBFIrlnAPRwQE66hAstuXBAbZVxxL8scUCMFx6XJAhxQLDbIVuFnXBAonLG2m0BcUCUCdkA3LRwQFbFXTQE5HBAF1aGE6dpcUCLAW70cHZxQKwvOjXNSnFAaZxzc5GacUD\u002fra05DxByQAvMtprjG3JAAAAAIK4\u002fckAAAADA9UhyQAAAAAAAWHJAAAAAwB69ckAAAABgZp5yQAAAAADXw3JAAAAAIIWPckAAAABA4aJyQAAAAMD10HJAAAAAgOshc0A="},"x":["2025-11-24T00:00:00-05:00","2025-11-25T00:00:00-05:00","2025-11-26T00:00:00-05:00","2025-11-28T00:00:00-05:00","2025-12-01T00:00:00-05:00","2025-12-02T00:00:00-05:00","2025-12-03T00:00:00-05:00","2025-12-04T00:00:00-05:00","2025-12-05T00:00:00-05:00","2025-12-08T00:00:00-05:00","2025-12-09T00:00:00-05:00","2025-12-10T00:00:00-05:00","2025-12-11T00:00:00-05:00","2025-12-12T00:00:00-05:00","2025-12-15T00:00:00-05:00","2025-12-16T00:00:00-05:00","2025-12-17T00:00:00-05:00","2025-12-18T00:00:00-05:00","2025-12-19T00:00:00-05:00","2025-12-22T00:00:00-05:00","2025-12-23T00:00:00-05:00","2025-12-24T00:00:00-05:00","2025-12-26T00:00:00-05:00","2025-12-29T00:00:00-05:00","2025-12-30T00:00:00-05:00","2025-12-31T00:00:00-05:00","2026-01-02T00:00:00-05:00","2026-01-05T00:00:00-05:00","2026-01-06T00:00:00-05:00","2026-01-07T00:00:00-05:00","2026-01-08T00:00:00-05:00","2026-01-09T00:00:00-05:00","2026-01-12T00:00:00-05:00","2026-01-13T00:00:00-05:00","2026-01-14T00:00:00-05:00","2026-01-15T00:00:00-05:00","2026-01-16T00:00:00-05:00","2026-01-20T00:00:00-05:00","2026-01-21T00:00:00-05:00","2026-01-22T00:00:00-05:00","2026-01-23T00:00:00-05:00","2026-01-26T00:00:00-05:00","2026-01-27T00:00:00-05:00","2026-01-28T00:00:00-05:00","2026-01-29T00:00:00-05:00","2026-01-30T00:00:00-05:00","2026-02-02T00:00:00-05:00","2026-02-03T00:00:00-05:00","2026-02-04T00:00:00-05:00","2026-02-05T00:00:00-05:00","2026-02-06T00:00:00-05:00","2026-02-09T00:00:00-05:00","2026-02-10T00:00:00-05:00","2026-02-11T00:00:00-05:00","2026-02-12T00:00:00-05:00","2026-02-13T00:00:00-05:00","2026-02-17T00:00:00-05:00","2026-02-18T00:00:00-05:00","2026-02-19T00:00:00-05:00","2026-02-20T00:00:00-05:00","2026-02-23T00:00:00-05:00","2026-02-24T00:00:00-05:00","2026-02-25T00:00:00-05:00","2026-02-26T00:00:00-05:00","2026-02-27T00:00:00-05:00","2026-03-02T00:00:00-05:00","2026-03-03T00:00:00-05:00","2026-03-04T00:00:00-05:00","2026-03-05T00:00:00-05:00","2026-03-06T00:00:00-05:00","2026-03-09T00:00:00-04:00","2026-03-10T00:00:00-04:00","2026-03-11T00:00:00-04:00","2026-03-12T00:00:00-04:00","2026-03-13T00:00:00-04:00","2026-03-16T00:00:00-04:00","2026-03-17T00:00:00-04:00","2026-03-18T00:00:00-04:00","2026-03-19T00:00:00-04:00","2026-03-20T00:00:00-04:00","2026-03-23T00:00:00-04:00","2026-03-24T00:00:00-04:00","2026-03-25T00:00:00-04:00","2026-03-26T00:00:00-04:00","2026-03-27T00:00:00-04:00","2026-03-30T00:00:00-04:00","2026-03-31T00:00:00-04:00","2026-04-01T00:00:00-04:00","2026-04-02T00:00:00-04:00","2026-04-06T00:00:00-04:00","2026-04-07T00:00:00-04:00","2026-04-08T00:00:00-04:00","2026-04-09T00:00:00-04:00","2026-04-10T00:00:00-04:00","2026-04-13T00:00:00-04:00","2026-04-14T00:00:00-04:00","2026-04-15T00:00:00-04:00","2026-04-16T00:00:00-04:00","2026-04-17T00:00:00-04:00","2026-04-20T00:00:00-04:00","2026-04-21T00:00:00-04:00","2026-04-22T00:00:00-04:00","2026-04-23T00:00:00-04:00","2026-04-24T00:00:00-04:00","2026-04-27T00:00:00-04:00","2026-04-28T00:00:00-04:00","2026-04-29T00:00:00-04:00","2026-04-30T00:00:00-04:00","2026-05-01T00:00:00-04:00","2026-05-04T00:00:00-04:00","2026-05-05T00:00:00-04:00","2026-05-06T00:00:00-04:00","2026-05-07T00:00:00-04:00","2026-05-08T00:00:00-04:00","2026-05-11T00:00:00-04:00","2026-05-12T00:00:00-04:00","2026-05-13T00:00:00-04:00","2026-05-14T00:00:00-04:00","2026-05-15T00:00:00-04:00","2026-05-18T00:00:00-04:00","2026-05-19T00:00:00-04:00","2026-05-20T00:00:00-04:00","2026-05-21T00:00:00-04:00","2026-05-22T00:00:00-04:00"],"type":"candlestick"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"margin":{"l":20,"r":20,"t":20,"b":20},"xaxis":{"rangeslider":{"visible":false}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="a8818c8b-f5a4-4509-b32c-e0c9dbf52188" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a8818c8b-f5a4-4509-b32c-e0c9dbf52188")) {                    Plotly.newPlot(                        "a8818c8b-f5a4-4509-b32c-e0c9dbf52188",                        [{"close":{"dtype":"f8","bdata":"AAAAoIg2cUAAAABATUdxQAAAAKCQUHFAAAAAgFNlcUAAAABAM6lxQAAAAGCM2nFAAAAAAPi5cUAAAAAA34JxQAAAAEA1ZHFAAAAAoP5VcUAAAADgp0pxQAAAAEA1ZHFAAAAAADtYcUAAAAAAOVxxQAAAAGCgGXFAAAAAoJwhcUAAAADAX\u002fVwQAAAAMD2+nBAAAAAoJkScUAAAADgeudwQAAAAMCt\u002fXBAAAAA4NUUcUAAAADASQ5xQAAAAKAJFHFAAAAAQC0JcUAAAACAsfVwQAAAAIAe6HBAAAAAADuscEAAAADA+V1wQAAAAECOPXBAAAAAQPQocEAAAABgOS5wQAAAACBHPHBAAAAA4A1JcEAAAACApTdwQAAAAOCyG3BAAAAAwMvhb0AAAACgwsduQAAAAKAa5m5AAAAAYHb8bkAAAACAj\u002fJuQAAAAMD23W9AAAAAIKgccEAAAADA3P5vQAAAAADRHHBAAAAAQPsvcEAAAAAAJthwQAAAAECvz3BAAAAAwKI\u002fcUAAAACgXzZxQAAAAOCqWXFAAAAAIOAlcUAAAABg2RZxQAAAAEDxM3FAAAAAYNNXcEAAAAAAbfFvQAAAAKAxenBAAAAAALWBcEAAAAAgcUVwQAAAACBihXBAAAAAoPWecEAAAACAO\u002f5wQAAAAECkH3FAAAAAIC4LcUAAAABA\u002fX5wQAAAAACfh3BAAAAAoB14cEAAAAAgdGRwQAAAAIDOQHBAAAAAYJETcEAAAACgQDpwQAAAAEBwSXBAAAAAYB5JcEAAAABAyfBvQAAAAAB5PG9AAAAAIMuSb0AAAAAg379vQAAAAOC3Nm9AAAAAIGMXb0AAAAAgYPhuQAAAAMBFaG9AAAAAYBFtb0AAAAAgZoxvQAAAAAAIlW9AAAAAgEUSb0AAAABA5cxuQAAAAODNsW9AAAAAYKHsb0AAAADg5vVvQAAAAIDyKXBAAAAAgIiob0AAAABAlipwQAAAAOAARHBAAAAAANhDcEAAAAAAYi9wQAAAAMB3KXBAAAAAwPSicEAAAABAhXJwQAAAAECz33BAAAAAQMcMcUAAAADgzJ5wQAAAAICyDnFAAAAAYNoScUAAAADA9+xwQAAAAIDRtXBAAAAAgF\u002fncEAAAADAvd5wQAAAAKCa8XBAAAAAQB1+cUAAAADgM0lxQAAAAOCxvnFAAAAAAO3zcUAAAACAzvJxQAAAAODMUHJAAAAAQOFKckAAAADAzGxyQAAAAIDrrXJAAAAAIFyjckAAAAAgrsNyQAAAAKBwnXJAAAAAIIWvckAAAAAAAORyQAAAAADXD3NAAAAAwB5Nc0A="},"high":{"dtype":"f8","bdata":"y9EFDMhHcUA8V\u002fS4wn1xQKSA+7UvcHFAOANUvLhncUCJlryRT65xQBUdG0\u002ff7XFAU2rbK1sBckAM2SpDO8NxQLFVvvLliXFA2Mqe+mtycUARESvaK3hxQKGDvwGzc3FAcV+G5iRxcUB3tAocPGtxQM1q014WenFAvMZZXdMvcUBnX4GvXTpxQGdy4Q\u002f2EXFAnY2Zz3MhcUDyrGEl9BVxQHpavi\u002fq\u002f3BA5VfGEbUucUBNIWjpvy1xQHeCXJGeHXFAjkhepyUZcUCrwvBswhJxQG9yKj8yVXFA3tv8txrwcEB9OVaU3LBwQK7Q9W0Oc3BAhdndWfIscEDXs5qeoztwQEfRM+YLTXBAzwMmGjFVcEBxXx3\u002fWVVwQG1OIiHlSHBA6uXOxrcmcEBUWMD5KMpvQDWBGvr9Ym9AtB\u002fu3RpRb0CL9vXPUR5vQEC32wNZAXBAcpMqjG1XcECRiUM+FCZwQL2k9xeyMnBAmGV7HqFWcEASw6Na0N9wQGoWP2UD9nBAdjM6UOxmcUA15S\u002f7tG9xQBcCjY45hnFAwl+pYBpfcUBG1chA3TFxQCXQvtrAfnFAWHOZoXU3cUDaWWtu0V9wQORM8um3oHBAU2sX0DCpcECM4ZLryINwQFdA6dsZiHBAv\u002f72XunScEByO9YhMSpxQFAswbL9KnFA6qrwdbE9cUDpyak28QhxQKoU6OyNpHBAD7wRjQyVcEBKGG\u002fwep5wQDjJNJYbVXBAEwCIL4IocEC4Gia2jU5wQMc6dIfQY3BAXZrgJThecECfevDoYitwQGh1TzaBAXBAo3mJbgC1b0BRoKs2pdxvQJ1ZZyyS1m9AnlDzeyRzb0DwZjtADx9vQG8Rgmyzy29AIPAX0g3Tb0DHuLotfdhvQIg9LhE3DHBAUb1\u002fjSfob0BkHhlHc1RvQJMQmKHV529AKJlLujb+b0A75JyqnfxvQEVYxO6yXnBAP0wHpNr+b0Ab4pSrLDhwQCrr6\u002f8STnBAp4x1rS1fcECWLSNODD9wQJXL268FW3BAMbeFwgilcEDNjr8SoK5wQKkxAxLKAHFAT1LGvHAgcUAEtwdByAhxQKUh5PnOF3FAd8iGLUI4cUDaXJA18AxxQOewFKzOwXBAVnnD\u002f6cPcUBD8Uf4pexwQMvkJnjvO3FA\u002fE8sLkrvcUCX7Cts8oVxQIxSleftxHFAzJgb6jz8cUDggykRxz1yQA+3JrLRZ3JAAAAAgBReckAAAADgUXRyQAAAAGC4znJAAAAAQDPHckAAAABAM\u002fNyQAAAAGCPynJAAAAAACnIckAAAADAzOxyQAAAAOCjGHNAAAAAYGZ2c0A="},"low":{"dtype":"f8","bdata":"Zi8qwVzmcEB3vLAw1StxQOuY2lzfQXFAVnV3maY3cUAEqOb9CzpxQLzKm6qxoXFAqTfh1GSscUCOCTBnLGFxQN3pkauMWHFA2nmjtzQ6cUCHeIf5gEZxQPynU2bWPnFADUz07dUUcUB\u002fJSX350RxQF2xkiVYBXFAirt+a5P0cEBQIuAkLvJwQH9zSY1Hp3BAVRnsQmTWcEAnxng+IuBwQMEEiUT20HBAgaXCmh\u002f7cEBDuwb6qQVxQFAvuPWE\u002fXBADX+uk2b8cED2rt7V7\u002fNwQFAnccQEyHBAFgHNAViacEBJtaWSJFpwQAqAHFNANXBA3o+H3Tnnb0C4U3\u002fa1fdvQCCA3RQuBXBAnZBc1JIecEBGwcUvvgNwQIvQlU8sCXBAZgSCnaHOb0CcjQS0\u002fl5uQBVExOU1l25Ax6jd6RL2bkD3EzZrPYduQNtnFdnGKm9Ai2yq1LIbcEBicu1xN8FvQHDI2MoFvm9APBPvpMt2b0BdPH8pqytwQNbnPNTRsXBA+eNOh4\u002f8cECAV0u7kgtxQNcAFKqpRnFALG5K4jL3cECY5D8qBQtxQLX2eXUoI3FA0fP+Vww\u002fcEB12gkd4OZvQCaf\u002fcLA6W9ATNzEyVVjcEBqTZI\u002f+DxwQGr+QhTCHnBANSiqbjNycEAZUKPTardwQKjKL93O7HBAVXw9u8\u002focECmDgldXmpwQJAT5ypeP3BA44fcxT8+cEA8ZKnF3lJwQBucNxY2EHBA\u002fy81zVjEb0CoSBGBSa5vQDrb0IBqC3BAm+01IPo0cEC6LhfKRb5vQOJPL2ZKKW9AoYE+y8w0b0A0Yzf1VH5vQI47gXaqGG9A5Jpc5FDibkDr4YEBwbhuQKi3xn+WQW9AKvV64j8qb0Dup\u002fIQymtvQLHPR\u002fxAUW9At2Yy4e76bkCLFhOSFqluQHCLc\u002fLr225AoN71Fxmjb0BxSfi8ak1vQIetgyyVA3BA442+sCmvbkC2m3+vswRwQMqbTZSy+m9ANQ5DQYEscEC7GJSzxwZwQCjA645AD3BAmVjRvykZcEDiju7HeFBwQEB08HuXp3BA41P5x6jgcED5rjDHfZJwQLVoamD9qXBAKFL8NWb2cEBaAvawbdZwQPvXplM3jXBAQvKTeprGcED8XxQNtaxwQMQFD5pKvnBA2pN67NFhcUBds3gttilxQExqOpTtQ3FAdSPgB\u002fuMcUA9mUBiRdhxQEwMYKS6G3JAAAAAIK4jckAAAADA9UhyQAAAAAAAWHJAAAAAgBR2ckAAAADgUYhyQAAAAGCPbnJAAAAAoJmFckAAAACgR6FyQAAAAGBmxnJAAAAAoHAdc0A="},"open":{"dtype":"f8","bdata":"Zi8qwVzmcEC+7NHpJixxQM3GNnskR3FA6gzX8+5LcUBedKRJ6VdxQA8KIluap3FAVc6iTbXacUCfP0qMK7lxQCP1geFQgHFAaddQzdNZcUDg0V6OTlpxQAAh7DLCU3FAgWdUn1FpcUBGKvhiJ1ZxQM1q014WenFAIeSkeAYFcUBOhLsLAChxQO4hzzakEXFA19+5K1P6cEBYrdnkqQVxQCCrmGtn5XBA+3aM6lv9cEBLijD6bBpxQEK+mgDzAnFAZXkHbd0EcUD6MIqi2whxQPJ\u002fYwEV\u002fHBAiY+r0zXicEDms8EBFKhwQJKGRhNka3BA6+\u002f+l7EIcEA08+2zlylwQEQOmcfeKnBAf3+y8tcjcEDATvDxIzBwQATfgJeqQnBAM9lgX78WcECRcCXFXIhvQMYrkUykB29AELdOlpwXb0ByxA9QkNtuQN2Up9NvYG9AyUHlyQcrcEDIxCFPwRJwQDEweUBYGHBAUj4lWUzWb0APaO2uwzhwQLQedIA2y3BA+eNOh4\u002f8cECS2yrj01lxQAV4mXiySXFAUvuRmHdacUBknBEQMSpxQNRxK4QnJ3FA58ESn2E1cUAB+MMiTVxwQOIf79r\u002fHHBA7sbb07d1cEDarjaCu2VwQDmafca0K3BAz5KAhPVzcEBBDd+i0LlwQGiXnjx6+HBAgOGQlSYrcUDpyak28QhxQOJxt\u002fWxYnBAT+WUxMxzcECFwy+YgIZwQNtbZp3MSHBAy3amVkUmcECJB8NYjO5vQHHLN\u002f2aFnBAB\u002fe7MZhNcEDBVNwgwCZwQOXTY7XV529ASWGQGhh8b0Dx2ITzRJdvQGm9bxe4jG9AIH+tLnQlb0CmplIzDvhuQJuhqCyPt29AakssetNDb0AnEws3t7tvQM\u002fcW+5pfG9AX87iKlK1b0BnM2bP3zpvQKbn0VbR9W5AwS8mcBO7b0D1vjWY6b5vQPJgPNxhBHBAylBCMZP9b0D4gFHSZCNwQMMZIn4vLHBAN9+d4tk7cEBb+3Pg2jdwQN\u002fWmYouMHBARgMADsIecEA+hj7O3qhwQNKdS5Rtq3BADfRiYUzhcEBFIrlnAPRwQE66hAstuXBAbZVxxL8scUCMFx6XJAhxQLDbIVuFnXBAonLG2m0BcUCUCdkA3LRwQFbFXTQE5HBAF1aGE6dpcUCLAW70cHZxQKwvOjXNSnFAaZxzc5GacUD\u002fra05DxByQAvMtprjG3JAAAAAIK4\u002fckAAAADA9UhyQAAAAAAAWHJAAAAAwB69ckAAAABgZp5yQAAAAADXw3JAAAAAIIWPckAAAABA4aJyQAAAAMD10HJAAAAAgOshc0A="},"x":["2025-11-24T00:00:00-05:00","2025-11-25T00:00:00-05:00","2025-11-26T00:00:00-05:00","2025-11-28T00:00:00-05:00","2025-12-01T00:00:00-05:00","2025-12-02T00:00:00-05:00","2025-12-03T00:00:00-05:00","2025-12-04T00:00:00-05:00","2025-12-05T00:00:00-05:00","2025-12-08T00:00:00-05:00","2025-12-09T00:00:00-05:00","2025-12-10T00:00:00-05:00","2025-12-11T00:00:00-05:00","2025-12-12T00:00:00-05:00","2025-12-15T00:00:00-05:00","2025-12-16T00:00:00-05:00","2025-12-17T00:00:00-05:00","2025-12-18T00:00:00-05:00","2025-12-19T00:00:00-05:00","2025-12-22T00:00:00-05:00","2025-12-23T00:00:00-05:00","2025-12-24T00:00:00-05:00","2025-12-26T00:00:00-05:00","2025-12-29T00:00:00-05:00","2025-12-30T00:00:00-05:00","2025-12-31T00:00:00-05:00","2026-01-02T00:00:00-05:00","2026-01-05T00:00:00-05:00","2026-01-06T00:00:00-05:00","2026-01-07T00:00:00-05:00","2026-01-08T00:00:00-05:00","2026-01-09T00:00:00-05:00","2026-01-12T00:00:00-05:00","2026-01-13T00:00:00-05:00","2026-01-14T00:00:00-05:00","2026-01-15T00:00:00-05:00","2026-01-16T00:00:00-05:00","2026-01-20T00:00:00-05:00","2026-01-21T00:00:00-05:00","2026-01-22T00:00:00-05:00","2026-01-23T00:00:00-05:00","2026-01-26T00:00:00-05:00","2026-01-27T00:00:00-05:00","2026-01-28T00:00:00-05:00","2026-01-29T00:00:00-05:00","2026-01-30T00:00:00-05:00","2026-02-02T00:00:00-05:00","2026-02-03T00:00:00-05:00","2026-02-04T00:00:00-05:00","2026-02-05T00:00:00-05:00","2026-02-06T00:00:00-05:00","2026-02-09T00:00:00-05:00","2026-02-10T00:00:00-05:00","2026-02-11T00:00:00-05:00","2026-02-12T00:00:00-05:00","2026-02-13T00:00:00-05:00","2026-02-17T00:00:00-05:00","2026-02-18T00:00:00-05:00","2026-02-19T00:00:00-05:00","2026-02-20T00:00:00-05:00","2026-02-23T00:00:00-05:00","2026-02-24T00:00:00-05:00","2026-02-25T00:00:00-05:00","2026-02-26T00:00:00-05:00","2026-02-27T00:00:00-05:00","2026-03-02T00:00:00-05:00","2026-03-03T00:00:00-05:00","2026-03-04T00:00:00-05:00","2026-03-05T00:00:00-05:00","2026-03-06T00:00:00-05:00","2026-03-09T00:00:00-04:00","2026-03-10T00:00:00-04:00","2026-03-11T00:00:00-04:00","2026-03-12T00:00:00-04:00","2026-03-13T00:00:00-04:00","2026-03-16T00:00:00-04:00","2026-03-17T00:00:00-04:00","2026-03-18T00:00:00-04:00","2026-03-19T00:00:00-04:00","2026-03-20T00:00:00-04:00","2026-03-23T00:00:00-04:00","2026-03-24T00:00:00-04:00","2026-03-25T00:00:00-04:00","2026-03-26T00:00:00-04:00","2026-03-27T00:00:00-04:00","2026-03-30T00:00:00-04:00","2026-03-31T00:00:00-04:00","2026-04-01T00:00:00-04:00","2026-04-02T00:00:00-04:00","2026-04-06T00:00:00-04:00","2026-04-07T00:00:00-04:00","2026-04-08T00:00:00-04:00","2026-04-09T00:00:00-04:00","2026-04-10T00:00:00-04:00","2026-04-13T00:00:00-04:00","2026-04-14T00:00:00-04:00","2026-04-15T00:00:00-04:00","2026-04-16T00:00:00-04:00","2026-04-17T00:00:00-04:00","2026-04-20T00:00:00-04:00","2026-04-21T00:00:00-04:00","2026-04-22T00:00:00-04:00","2026-04-23T00:00:00-04:00","2026-04-24T00:00:00-04:00","2026-04-27T00:00:00-04:00","2026-04-28T00:00:00-04:00","2026-04-29T00:00:00-04:00","2026-04-30T00:00:00-04:00","2026-05-01T00:00:00-04:00","2026-05-04T00:00:00-04:00","2026-05-05T00:00:00-04:00","2026-05-06T00:00:00-04:00","2026-05-07T00:00:00-04:00","2026-05-08T00:00:00-04:00","2026-05-11T00:00:00-04:00","2026-05-12T00:00:00-04:00","2026-05-13T00:00:00-04:00","2026-05-14T00:00:00-04:00","2026-05-15T00:00:00-04:00","2026-05-18T00:00:00-04:00","2026-05-19T00:00:00-04:00","2026-05-20T00:00:00-04:00","2026-05-21T00:00:00-04:00","2026-05-22T00:00:00-04:00"],"type":"candlestick"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"margin":{"l":20,"r":20,"t":20,"b":20},"xaxis":{"rangeslider":{"visible":false}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    )                };            </script>        </div>
         </div>
 
         <div class="sidebar">

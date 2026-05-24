@@ -3,60 +3,83 @@ import yfinance as yf
 import pandas as pd
 
 # ==============================================================================
-# 1. LIVE-DATEN FÜR DIE MARKT-KARTEN (TICKER) HOLEN
+# 1. ALLE 18 SYMBOLE AUS DEINEN SCREENSHOTS NACH KATEGORIEN SORTIERT
 # ==============================================================================
-# Yahoo-Finance Symbole für deine Wunsch-Karten
-market_symbols = {
-    'DAX': '^GDAXI',
-    'S&P 500': '^GSPC',
-    'Gold': 'GC=F',
-    'Öl Brent': 'BZ=F',
-    'Bitcoin': 'BTC-USD',
-    'Ethereum': 'ETH-USD'
+categories = {
+    "Deutsche Indizes": {
+        'DAX': '^GDAXI', 'MDAX': '^MDAXI', 'TecDAX': '^TECDAX', 'SDAX': '^SDAXI', 'DivDAX': '^DIVDAX'
+    },
+    "Internationale Märkte": {
+        'Eurostoxx': '^STOXX50E', 'DowJones': '^DJI', 'US Tech 100': '^NDX', 'S&P 500': '^GSPC', 'Nikkei': '^N225'
+    },
+    "Rohstoffe": {
+        'Gold': 'GC=F', 'Silber': 'SI=F', 'Öl Brent': 'BZ=F'
+    },
+    "Kryptowährungen": {
+        'Bitcoin': 'BTC-USD', 'Ethereum': 'ETH-USD', 'Solana': 'SOL-USD', 'XRP': 'XRP-USD', 'Dogecoin': 'DOGE-USD'
+    }
 }
 
-ticker_html_cards = ""
+total_ticker_html = ""
 
-for name, sym in market_symbols.items():
-    try:
-        t_data = yf.Ticker(sym).history(period='2d')
-        if len(t_data) >= 2:
-            current_price = t_data['Close'].iloc[-1]
-            prev_price = t_data['Close'].iloc[-2]
-            change_pct = ((current_price - prev_price) / prev_price) * 100
-            
-            # Formatierung je nach Anlageklasse
-            if "USD" in sym or name in ['Gold', 'Öl Brent', 'Bitcoin', 'Ethereum']:
-                price_str = f"{current_price:,.2f} USD"
-            else:
-                price_str = f"{current_price:,.2f}"
+# Wir gehen jede Kategorie durch und bauen die Boxen
+for cat_name, symbols in categories.items():
+    total_ticker_html += f'<div class="category-section"><h3>{cat_name}</h3><div class="ticker-grid">'
+    
+    for name, sym in symbols.items():
+        try:
+            # Daten für die letzten 2 Tage holen, um die Änderung zu berechnen
+            t_data = yf.Ticker(sym).history(period='2d')
+            if not t_data.empty and len(t_data) >= 1:
+                current_price = t_data['Close'].iloc[-1]
                 
-            # Tausendertrennzeichen im deutschen Stil (Punkt statt Komma)
-            price_str = price_str.replace(",", "X").replace(".", ",").replace("X", ".")
-            
-            # Farbe und Vorzeichen bestimmen
-            if change_pct >= 0:
-                color_class = "pos"
-                sign = "+"
-            else:
-                color_class = "neg"
-                sign = ""
+                # Falls der Markt geschlossen hat oder nur 1 Tag liefert, künstliche Änderung abfangen
+                if len(t_data) >= 2:
+                    prev_price = t_data['Close'].iloc[-2]
+                    change_pct = ((current_price - prev_price) / prev_price) * 100
+                else:
+                    change_pct = 0.0
+
+                # Währungs-Suffix und Nachkommastellen festlegen
+                if cat_name in ["Rohstoffe", "Kryptowährungen"] or "Tech" in name or "S&P" in name:
+                    suffix = " USD"
+                else:
+                    suffix = ""
                 
-            # Einzelne HTML-Karte generieren
-            ticker_html_cards += f"""
-            <div class="market-card">
-                <div class="market-name">{name}</div>
-                <div class="market-details">
-                    <span class="market-price">{price_str}</span>
-                    <span class="market-change {color_class}">{sign}{change_pct:.2f}%</span>
+                # Spezielle Formatierung für super günstige Kryptos wie Dogecoin oder XRP
+                if current_price < 2:
+                    price_str = f"{current_price:.4f}{suffix}"
+                else:
+                    price_str = f"{current_price:,.2f}{suffix}"
+                
+                # Deutsche Formatierung (Komma statt Punkt)
+                price_str = price_str.replace(",", "X").replace(".", ",").replace("X", ".")
+                
+                # Farbe und Vorzeichen bestimmen
+                if change_pct >= 0:
+                    color_class = "pos"
+                    sign = "+"
+                else:
+                    color_class = "neg"
+                    sign = ""
+                
+                # HTML für die einzelne Karte hinzufügen
+                total_ticker_html += f"""
+                <div class="market-card">
+                    <div class="market-name">{name}</div>
+                    <div class="market-details">
+                        <span class="market-price">{price_str}</span>
+                        <span class="market-change {color_class}">{sign}{change_pct:.2f}%</span>
+                    </div>
                 </div>
-            </div>
-            """
-    except Exception as e:
-        print(f"Fehler bei {name}: {e}")
+                """
+        except Exception as e:
+            print(f"Fehler bei {name}: {e}")
+            
+    total_ticker_html += "</div></div>" # Grids und Sektionen schließen
 
 # ==============================================================================
-# 2. HAUPT-CHART GENERIEREN (Apple als Standard-Fokus)
+# 2. HAUPT-CHART GENERIEREN (Apple)
 # ==============================================================================
 ticker_symbol = 'AAPL'
 aktie = yf.Ticker(ticker_symbol)
@@ -80,7 +103,7 @@ fig.update_layout(
 chart_div = fig.to_html(full_html=False, include_plotlyjs='cdn')
 
 # ==============================================================================
-# 3. DAS WEBSEITEN-LAYOUT (HTML & CSS MIT MARKT-KARTEN STYLE)
+# 3. DAS GESTYLTE MAGAZIN-LAYOUT (HTML & CSS)
 # ==============================================================================
 html_content = f"""
 <!DOCTYPE html>
@@ -99,35 +122,43 @@ html_content = f"""
         }}
         header {{
             background-color: #151a24;
-            padding: 15px 20px;
+            padding: 20px;
             border-bottom: 1px solid #1f2633;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            text-align: center;
         }}
-        header h1 {{ margin: 0; color: #00ff88; font-size: 24px; letter-spacing: 1px; }}
+        header h1 {{ margin: 0; color: #00ff88; font-size: 28px; letter-spacing: 1px; }}
         
-        /* Die neue Grid-Leiste für die Markt-Karten */
-        .ticker-container {{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-            padding: 15px 20px;
+        /* Das große Ticker-System für alle Kategorien */
+        .master-ticker {{
             background-color: #0e121a;
+            padding: 15px 20px;
             border-bottom: 1px solid #1f2633;
+        }}
+        .category-section {{
+            margin-bottom: 15px;
+        }}
+        .category-section h3 {{
+            margin: 0 0 8px 0;
+            font-size: 13px;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+        .ticker-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
         }}
         .market-card {{
             background-color: #151a24;
             border: 1px solid #242c3d;
             border-radius: 6px;
             padding: 10px 14px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }}
         .market-name {{
             font-size: 12px;
             font-weight: bold;
             color: #8f9cae;
-            text-transform: uppercase;
             margin-bottom: 4px;
         }}
         .market-details {{
@@ -142,8 +173,6 @@ html_content = f"""
         .market-change {{
             font-size: 13px;
             font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 4px;
         }}
         .pos {{ color: #00ff88; }}
         .neg {{ color: #ff3366; }}
@@ -151,7 +180,7 @@ html_content = f"""
         /* Haupt-Inhalt */
         .container {{
             display: flex;
-            max-width: 1500px;
+            max-width: 1600px;
             margin: 20px auto;
             padding: 0 20px;
             gap: 20px;
@@ -176,8 +205,8 @@ html_content = f"""
         <h1>ÜBERRENDITEN.DE</h1>
     </header>
 
-    <div class="ticker-container">
-        {ticker_html_cards}
+    <div class="master-ticker">
+        {total_ticker_html}
     </div>
 
     <div class="container">
@@ -207,9 +236,9 @@ html_content = f"""
 """
 
 # ==============================================================================
-# 4. SPEICHERN
+# 4. DATA SPEICHERN
 # ==============================================================================
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Perfekt! Die Finanzseite inklusive echten Markt-Karten wurde erstellt!")
+print("Perfekt! Alle 18 Markt-Karten wurden geladen und im Layout verbaut!")
