@@ -3,7 +3,7 @@ import yfinance as yf
 import pandas as pd
 
 # ==============================================================================
-# 1. LIVE-DATEN FÜR DEN TICKER (Ohne Solana, XRP, Dogecoin)
+# 1. LIVE-DATEN FÜR DEN TICKER (Bereinigt)
 # ==============================================================================
 market_symbols = {
     # Deutsche Indizes
@@ -12,7 +12,7 @@ market_symbols = {
     'Eurostoxx': '^STOXX50E', 'DowJones': '^DJI', 'US Tech 100': '^NDX', 'S&P 500': '^GSPC', 'Nikkei': '^N225',
     # Rohstoffe
     'Gold': 'GC=F', 'Silber': 'SI=F', 'Öl Brent': 'BZ=F',
-    # Krypto (Bereinigt)
+    # Krypto
     'Bitcoin': 'BTC-USD', 'Ethereum': 'ETH-USD'
 }
 
@@ -25,7 +25,6 @@ for name, sym in market_symbols.items():
             current_price = t_data['Close'].iloc[-1]
             change_pct = ((current_price - t_data['Close'].iloc[-2]) / t_data['Close'].iloc[-2]) * 100 if len(t_data) >= 2 else 0.0
 
-            # Passendes Währungssuffix anhängen
             if any(k in name for k in ['Gold', 'Silber', 'Öl', 'Bitcoin', 'Ethereum', 'Tech', 'S&P']):
                 suffix = " USD"
             else:
@@ -69,7 +68,7 @@ fig.update_layout(
 chart_div = fig.to_html(full_html=False, include_plotlyjs='cdn')
 
 # ==============================================================================
-# 3. COMPACT LAYOUT (HTML & NEUES SCHLANKES CSS)
+# 3. ANIMATED TICKER LAYOUT (HTML & CSS ANIMATION)
 # ==============================================================================
 html_content = f"""
 <!DOCTYPE html>
@@ -85,6 +84,7 @@ html_content = f"""
             color: #ffffff;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }}
         header {{
             background-color: #151a24;
@@ -95,27 +95,37 @@ html_content = f"""
         }}
         header h1 {{ margin: 0; color: #00ff88; font-size: 20px; letter-spacing: 1px; }}
         
-        /* Die neue, extrem schlanke horizontale Scroll-Leiste */
+        /* TICKER CONTAINER SCHLANK & ANIMIERT */
         .ticker-wrapper {{
             background-color: #0e121a;
             border-bottom: 1px solid #1f2633;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 6px 10px;
-            -webkit-overflow-scrolling: touch;
+            overflow: hidden; /* Versteckt alles, was aus dem Bildschirm ragt */
+            display: flex;
+            padding: 6px 0;
+            position: relative;
         }}
-        /* Versteckt die Scrollbars in den meisten Browsern für cleanen Look */
-        .ticker-wrapper::-webkit-scrollbar {{ display: none; }}
+        
+        .ticker-track {{
+            display: flex;
+            width: max-content;
+            animation: scroll-left 35s linear infinite; /* 35 Sekunden für einen Durchlauf */
+        }}
+        
+        /* Pausiert die Animation, wenn man mit der Maus darüber fährt (wichtig zum Lesen!) */
+        .ticker-wrapper:hover .ticker-track {{
+            animation-play-state: paused;
+        }}
         
         .market-card {{
-            display: inline-flex;
+            display: flex;
             align-items: center;
             background-color: #151a24;
             border: 1px solid #242c3d;
             border-radius: 4px;
             padding: 6px 12px;
-            margin-right: 8px;
+            margin-right: 12px;
             font-size: 13px;
+            white-space: nowrap;
         }}
         .market-name {{ font-weight: bold; color: #8f9cae; margin-right: 8px; }}
         .market-price {{ font-weight: bold; margin-right: 8px; }}
@@ -123,6 +133,12 @@ html_content = f"""
         
         .pos {{ color: #00ff88; }}
         .neg {{ color: #ff3366; }}
+        
+        /* DIE MAGISCHE ANIMATION */
+        @keyframes scroll-left {{
+            0% {{ transform: translateX(0); }}
+            100% {{ transform: translateX(-50%); }} /* Verschiebt exakt um die Länge der ersten Leiste */
+        }}
         
         /* Haupt-Inhalt */
         .container {{
@@ -155,7 +171,9 @@ html_content = f"""
     </header>
 
     <div class="ticker-wrapper">
-        {ticker_html_cards}
+        <div class="ticker-track">
+            {ticker_html_cards}
+            {ticker_html_cards} </div>
     </div>
 
     <div class="container">
@@ -190,4 +208,4 @@ html_content = f"""
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Schlankes, bereinigtes Design erfolgreich generiert!")
+print("Perfekt! Der unendliche Live-Laufband-Ticker ist einsatzbereit!")
