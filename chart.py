@@ -223,7 +223,7 @@ html_content = f"""
 # ==============================================================================
 # 4. DATEI SPEICHERN
 # ==============================================================================
-with open("linkpage.html", "w", encoding="utf-8") as f:
+with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Erfolgreich! Die Link-Seite wurde als 'linkpage.html' generierts.")
+print("Erfolgreich! Die Link-Seite wurde als 'index.html' generierts.")
