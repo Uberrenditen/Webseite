@@ -226,4 +226,4 @@ html_content = f"""
 with open("linkpage.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Erfolgreich! Die Link-Seite wurde als 'linkpage.html' generiert.")
+print("Erfolgreich! Die Link-Seite wurde als 'linkpage.html' generierts.")
