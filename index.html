@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Überrenditen.de</title>
+    <title>Überrenditen.de - Superinvestor Tracker</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -16,12 +16,15 @@
         }
         header {
             background-color: #151a24;
-            padding: 12px 20px;
+            padding: 15px 20px;
             border-bottom: 1px solid #1f2633;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
-        header h1 { margin: 0; color: #00ff88; font-size: 20px; letter-spacing: 1px; }
+        header h1 { margin: 0; color: #00ff88; font-size: 22px; letter-spacing: 1px; }
+        header nav a { color: #8f9cae; text-decoration: none; margin-left: 20px; font-size: 14px; }
+        header nav a:hover { color: #00ff88; }
         
         /* UNENDLICHER TICKER STRIP */
         .ticker-wrapper {
@@ -30,15 +33,11 @@
             overflow: hidden;
             display: flex;
             padding: 8px 0;
-            position: relative;
         }
         .ticker-track {
             display: flex;
             width: max-content;
             animation: scroll-left 35s linear infinite;
-        }
-        .ticker-wrapper:hover .ticker-track {
-            animation-play-state: paused;
         }
         .market-card {
             display: flex;
@@ -49,7 +48,6 @@
             padding: 6px 12px;
             margin-right: 12px;
             font-size: 13px;
-            white-space: nowrap;
         }
         .market-name { font-weight: bold; color: #8f9cae; margin-right: 8px; }
         .market-price { font-weight: bold; margin-right: 8px; }
@@ -59,7 +57,89 @@
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
+
+        /* MAIN CONTENT LAYOUT */
+        .main-container {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .main-container { grid-template-columns: 1fr; }
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #8f9cae;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #1f2633;
+            padding-bottom: 8px;
+        }
+
+        /* INVESTOREN GRID */
+        .investor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .investor-card {
+            background-color: #151a24;
+            border: 1px solid #242c3d;
+            border-radius: 6px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .investor-card h3 { margin: 0 0 5px 0; font-size: 18px; color: #ffffff; }
+        .investor-card .company { margin: 0 0 15px 0; color: #8f9cae; font-size: 13px; }
+        .inv-details { font-size: 14px; margin-bottom: 20px; }
+        .inv-details div { margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .inv-details span { color: #8f9cae; }
+        .view-btn {
+            background-color: #242c3d;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .view-btn:hover { background-color: #00ff88; color: #0b0e14; }
+
+        /* AKTIVITÄTS TABELLE */
+        .activity-panel {
+            background-color: #151a24;
+            border: 1px solid #242c3d;
+            border-radius: 6px;
+            padding: 20px;
+            height: fit-content;
+        }
+        .activity-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .activity-table th { text-align: left; color: #8f9cae; padding: 10px 5px; border-bottom: 1px solid #1f2633; }
+        .activity-table td { padding: 12px 5px; border-bottom: 1px solid #1f2633; }
         
+        .badge {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .badge.pos { background-color: rgba(0, 255, 136, 0.15); color: #00ff88; }
+        .badge.neg { background-color: rgba(255, 51, 102, 0.15); color: #ff3366; }
+
         /* Globale Farbklassen */
         .pos { color: #00ff88; }
         .neg { color: #ff3366; }
@@ -69,6 +149,11 @@
 
     <header>
         <h1>ÜBERRENDITEN.DE</h1>
+        <nav>
+            <a href="#">Superinvestoren</a>
+            <a href="#">Top Käufe</a>
+            <a href="#">13F-Filings</a>
+        </nav>
     </header>
 
     <div class="ticker-wrapper">
@@ -87,27 +172,9 @@
             </div>
             
             <div class="market-card">
-                <span class="market-name">TecDAX</span>
-                <span class="market-price">4.036,09</span>
-                <span class="market-change pos">+1.95%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">SDAX</span>
-                <span class="market-price">18.736,95</span>
-                <span class="market-change pos">+1.26%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Eurostoxx</span>
-                <span class="market-price">6.019,45</span>
-                <span class="market-change pos">+0.99%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">DowJones</span>
-                <span class="market-price">50.579,70</span>
-                <span class="market-change pos">+0.58%</span>
+                <span class="market-name">S&P 500</span>
+                <span class="market-price">7.473,47 USD</span>
+                <span class="market-change pos">+0.37%</span>
             </div>
             
             <div class="market-card">
@@ -117,45 +184,15 @@
             </div>
             
             <div class="market-card">
-                <span class="market-name">S&P 500</span>
-                <span class="market-price">7.473,47 USD</span>
-                <span class="market-change pos">+0.37%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Nikkei</span>
-                <span class="market-price">63.339,07</span>
-                <span class="market-change pos">+2.68%</span>
-            </div>
-            
-            <div class="market-card">
                 <span class="market-name">Gold</span>
-                <span class="market-price">4.521,00 USD</span>
-                <span class="market-change neg">-0.41%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Silber</span>
-                <span class="market-price">75,89 USD</span>
-                <span class="market-change neg">-0.68%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Öl Brent</span>
-                <span class="market-price">103,54 USD</span>
-                <span class="market-change pos">+0.94%</span>
+                <span class="market-price">4.523,20 USD</span>
+                <span class="market-change pos">+0.05%</span>
             </div>
             
             <div class="market-card">
                 <span class="market-name">Bitcoin</span>
-                <span class="market-price">76.745,36 USD</span>
-                <span class="market-change pos">+0.00%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Ethereum</span>
-                <span class="market-price">2.118,96 USD</span>
-                <span class="market-change pos">+0.00%</span>
+                <span class="market-price">76.790,73 USD</span>
+                <span class="market-change pos">+0.15%</span>
             </div>
             
             
@@ -172,27 +209,9 @@
             </div>
             
             <div class="market-card">
-                <span class="market-name">TecDAX</span>
-                <span class="market-price">4.036,09</span>
-                <span class="market-change pos">+1.95%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">SDAX</span>
-                <span class="market-price">18.736,95</span>
-                <span class="market-change pos">+1.26%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Eurostoxx</span>
-                <span class="market-price">6.019,45</span>
-                <span class="market-change pos">+0.99%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">DowJones</span>
-                <span class="market-price">50.579,70</span>
-                <span class="market-change pos">+0.58%</span>
+                <span class="market-name">S&P 500</span>
+                <span class="market-price">7.473,47 USD</span>
+                <span class="market-change pos">+0.37%</span>
             </div>
             
             <div class="market-card">
@@ -202,47 +221,144 @@
             </div>
             
             <div class="market-card">
-                <span class="market-name">S&P 500</span>
-                <span class="market-price">7.473,47 USD</span>
-                <span class="market-change pos">+0.37%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Nikkei</span>
-                <span class="market-price">63.339,07</span>
-                <span class="market-change pos">+2.68%</span>
-            </div>
-            
-            <div class="market-card">
                 <span class="market-name">Gold</span>
-                <span class="market-price">4.521,00 USD</span>
-                <span class="market-change neg">-0.41%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Silber</span>
-                <span class="market-price">75,89 USD</span>
-                <span class="market-change neg">-0.68%</span>
-            </div>
-            
-            <div class="market-card">
-                <span class="market-name">Öl Brent</span>
-                <span class="market-price">103,54 USD</span>
-                <span class="market-change pos">+0.94%</span>
+                <span class="market-price">4.523,20 USD</span>
+                <span class="market-change pos">+0.05%</span>
             </div>
             
             <div class="market-card">
                 <span class="market-name">Bitcoin</span>
-                <span class="market-price">76.745,36 USD</span>
-                <span class="market-change pos">+0.00%</span>
+                <span class="market-price">76.790,73 USD</span>
+                <span class="market-change pos">+0.15%</span>
             </div>
             
-            <div class="market-card">
-                <span class="market-name">Ethereum</span>
-                <span class="market-price">2.118,96 USD</span>
-                <span class="market-change pos">+0.00%</span>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div>
+            <h2>Value- & Superinvestoren</h2>
+            <div class="investor-grid">
+                
+    <div class="investor-card">
+        <h3>Warren Buffett</h3>
+        <p class="company">Berkshire Hathaway</p>
+        <div class="inv-details">
+            <div><span>Portfolio-Wert:</span> <strong>$ 284.1 B</strong></div>
+            <div><span>Positionen:</span> <strong>41</strong></div>
+            <div><span>Größte Position:</span> <strong style="color: #00ff88;">Apple Inc. (AAPL)</strong></div>
+        </div>
+        <a href="#" class="view-btn">Portfolio ansehen</a>
+    </div>
+    
+    <div class="investor-card">
+        <h3>Mohnish Pabrai</h3>
+        <p class="company">Pabrai Funds</p>
+        <div class="inv-details">
+            <div><span>Portfolio-Wert:</span> <strong>$ 185.4 M</strong></div>
+            <div><span>Positionen:</span> <strong>5</strong></div>
+            <div><span>Größte Position:</span> <strong style="color: #00ff88;">Alpha Metallurgical (AMR)</strong></div>
+        </div>
+        <a href="#" class="view-btn">Portfolio ansehen</a>
+    </div>
+    
+    <div class="investor-card">
+        <h3>Li Lu</h3>
+        <p class="company">Himalaya Capital</p>
+        <div class="inv-details">
+            <div><span>Portfolio-Wert:</span> <strong>$ 2.1 B</strong></div>
+            <div><span>Positionen:</span> <strong>6</strong></div>
+            <div><span>Größte Position:</span> <strong style="color: #00ff88;">Bank of America (BAC)</strong></div>
+        </div>
+        <a href="#" class="view-btn">Portfolio ansehen</a>
+    </div>
+    
+    <div class="investor-card">
+        <h3>Guy Spier</h3>
+        <p class="company">Aquamarine Capital</p>
+        <div class="inv-details">
+            <div><span>Portfolio-Wert:</span> <strong>$ 142.3 M</strong></div>
+            <div><span>Positionen:</span> <strong>12</strong></div>
+            <div><span>Größte Position:</span> <strong style="color: #00ff88;">American Express (AXP)</strong></div>
+        </div>
+        <a href="#" class="view-btn">Portfolio ansehen</a>
+    </div>
+    
+    <div class="investor-card">
+        <h3>Michael Burry</h3>
+        <p class="company">Scion Asset Mgmt.</p>
+        <div class="inv-details">
+            <div><span>Portfolio-Wert:</span> <strong>$ 94.5 M</strong></div>
+            <div><span>Positionen:</span> <strong>18</strong></div>
+            <div><span>Größte Position:</span> <strong style="color: #00ff88;">Alibaba Group (BABA)</strong></div>
+        </div>
+        <a href="#" class="view-btn">Portfolio ansehen</a>
+    </div>
+    
+    <div class="investor-card">
+        <h3>Bill Gates</h3>
+        <p class="company">Gates Foundation</p>
+        <div class="inv-details">
+            <div><span>Portfolio-Wert:</span> <strong>$ 42.6 B</strong></div>
+            <div><span>Positionen:</span> <strong>24</strong></div>
+            <div><span>Größte Position:</span> <strong style="color: #00ff88;">Microsoft Corp (MSFT)</strong></div>
+        </div>
+        <a href="#" class="view-btn">Portfolio ansehen</a>
+    </div>
+    
             </div>
-            
+        </div>
+
+        <div class="activity-panel">
+            <h2>Letzte Aktivitäten (13F)</h2>
+            <table class="activity-table">
+                <thead>
+                    <tr>
+                        <th>Investor</th>
+                        <th>Aktion</th>
+                        <th>Aktie</th>
+                        <th>% Portf.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+    <tr>
+        <td><strong>Warren Buffett</strong></td>
+        <td><span class="badge pos">Kauf</span></td>
+        <td>Chubb Ltd (CB)</td>
+        <td class="pos">1.4%</td>
+    </tr>
+    
+    <tr>
+        <td><strong>Michael Burry</strong></td>
+        <td><span class="badge pos">Kauf</span></td>
+        <td>Baidu Inc (BIDU)</td>
+        <td class="pos">4.2%</td>
+    </tr>
+    
+    <tr>
+        <td><strong>Li Lu</strong></td>
+        <td><span class="badge neg">Reduziert</span></td>
+        <td>Apple Inc (AAPL)</td>
+        <td class="neg">-2.1%</td>
+    </tr>
+    
+    <tr>
+        <td><strong>Guy Spier</strong></td>
+        <td><span class="badge pos">Kauf</span></td>
+        <td>Ferrari N.V. (RACE)</td>
+        <td class="pos">0.8%</td>
+    </tr>
+    
+    <tr>
+        <td><strong>Mohnish Pabrai</strong></td>
+        <td><span class="badge neg">Verkauf</span></td>
+        <td>Valaris Ltd (VAL)</td>
+        <td class="neg">Kpl. Verkauf</td>
+    </tr>
+    
+                </tbody>
+            </table>
         </div>
     </div>
 
