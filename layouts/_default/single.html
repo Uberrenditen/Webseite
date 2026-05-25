@@ -1,0 +1,78 @@
+
+{{ define "main" }}
+
+  {{ $fileBaseName := .File.BaseFileName }}
+
+  {{ $contentClass := dict "datenschutz" "datenschutzContent" "agb" "agbContent" "impressum" "impressumContent" "danke" "dankeContent" "bitte" "bitteContent"}}
+  {{ $class := index $contentClass $fileBaseName }}
+
+  {{ if $class }}
+    <!-- Nur den Inhalt der spezifischen Seite anzeigen -->
+    <div class="{{ $class }}">{{ .Content | safeHTML}}</div>
+    
+  {{ else }}
+
+    <div class="singleBottomHead">
+      <h1 class="singleHeadContent1">{{ .Title | safeHTML}}</h1>
+      <br>
+
+
+      <div class="singleRightBar">{{ partial "share.html" . | safeHTML}}</div>
+
+
+      <!--<p class="singleHeadContent2">{{ .Params.description | safeHTML}}</p> -->
+
+
+
+
+
+
+
+      
+
+    </div>
+    <br>
+
+
+    <div class="singleBottom">
+
+      <div class="singleContent">{{ .Content | safeHTML}}
+        <br>
+
+        {{ partial "subscribe.html" . }}
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        
+          <h3 style="text-align: left; color: gray;">Ich freue mich auf deine Nachricht 🤩</h3>
+          <br>
+
+          <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="0a947982-a727-4db3-b04c-a66a93df4123"
+          data-page-id="{{ .File.UniqueID }}"
+          data-page-url="{{ .Permalink }}"
+          data-page-title="{{ .Title }}">
+        </div>
+        
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+      </div>
+
+
+
+    {{ end }}
+
+{{ end }}
+
+

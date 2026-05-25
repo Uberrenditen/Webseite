@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Value on Value Investing</title>
+    <link>http://localhost:1313/value/</link>
+    <description>Recent content in Value on Value Investing</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 13 Sep 2024 21:08:46 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/value/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Value-Investor</title>
+      <link>http://localhost:1313/value/value-investor/</link>
+      <pubDate>Fri, 13 Sep 2024 21:08:46 +0000</pubDate>
+      <guid>http://localhost:1313/value/value-investor/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

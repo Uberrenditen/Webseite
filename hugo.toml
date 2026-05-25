@@ -1,0 +1,62 @@
+baseURL = "https://überrenditen.de/"
+languageCode = 'de'
+title = 'Value Investing'
+
+relativeURLs = false
+canonifyURLs = true
+
+[params]
+  canonicalURL = "https://überrenditen.de/"
+  useHugoEasySocialShare = true
+  keywords = "Werde erfolgreich wie Warren Buffett!"
+  description = "**Value Investing** ist eine Anlagestrategie, bei der man eine Aktie kauft, wenn ihr Preis unter ihrem tatsächlichen Wert liegt."
+  dateFormat = "02.01.2006"
+
+
+  [params.categoryColors]
+    Value-Investing = "#FF5733"
+    Value-Investor = "#3357FF"
+  
+  [params.google.analytics]
+    id = "G-Q09M9DESDX"
+
+[pagination]
+  pagerSize = 10
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+
+[taxonomies]
+  value = "value"
+  author = "HiValueInvestor"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[mediaTypes."text/html"]
+  charset = "UTF-8"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  page = "/:slug/"
+  category = "/value/:slug/"
+  tag = "/tags/:slug/"
+
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5

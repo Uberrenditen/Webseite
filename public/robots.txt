@@ -1,0 +1,9 @@
+# Erlaubt allen Suchmaschinen, alle Seiten zu durchsuchen
+User-agent: *
+
+# Blockiert den Zugriff auf das Verzeichnis /private/
+Disallow: /private/
+
+# Gibt den Suchmaschinen den Standort der Sitemap an
+Sitemap: hivalueinvestor.de/sitemap.xml
+

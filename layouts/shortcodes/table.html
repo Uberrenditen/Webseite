@@ -1,0 +1,27 @@
+<style>
+    table {
+        border-collapse: collapse;
+        width: 700px; /* Setze die Breite auf 700px */
+        font-size: 10px; /* Textgröße auf 10px setzen */
+    }
+    
+    table, th, td {
+        border: 1px solid black; /* Rahmen für Tabelle, th, und td */
+    }
+    
+    th, td {
+        padding: 2px; /* Verkleinertes Padding für kleinere Zeilenhöhe */
+        text-align: left;
+        line-height: 1; /* Minimale Zeilenhöhe */
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Ermöglicht horizontales Scrollen, falls notwendig */
+    }
+</style>
+
+<div class="table-responsive">
+    <table class="table">
+        {{ .Inner }}
+    </table>
+</div>

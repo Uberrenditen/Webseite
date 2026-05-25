@@ -1,0 +1,164 @@
+<!-- CSS für das Cookie-Consent-Banner -->
+<style>
+    #consent-notice,
+    #manage-consent {
+      background-color: white; /* Grauer Hintergrund */
+      border: 1px solid #ccc; /* Grauer Rand */
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    #consent-notice {
+      display: none; /* Standardmäßig ausgeblendet */
+    }
+  
+    #manage-consent {
+      display: none; /* Standardmäßig ausgeblendet */
+    }
+  
+    .btn {
+      background-color: #007bff; /* Blaue Hintergrundfarbe für Buttons */
+      color: #fff; /* Weiße Schriftfarbe */
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  
+    .btn.deny-consent {
+      background-color: #dc3545; /* Rote Hintergrundfarbe für Ablehnen-Button */
+    }
+  
+    .btn:hover {
+      opacity: 0.9;
+    }
+  
+    .btn:focus {
+      outline: none;
+    }
+  </style>
+  
+  <!-- Consent-Banner -->
+  <div id="consent-notice">
+      <span>Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir <a href="#manage-consent" class="manage-consent" style="color: #ffb84d; text-decoration: underline;">Cookies.</a> Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.</span>
+      <div style="margin-top: 1rem;">
+          <button class="btn deny-consent">Ablehnen</button>
+          <button class="btn approve-consent">Alle zulassen</button>
+      </div>
+  </div>
+  
+  <!-- Consent Management -->
+  <div id="manage-consent">
+      <p>{{ .Site.Params.google.analytics.title }}</p>
+      <p>{{ .Site.Params.google.analytics.description }}</p>
+      <label style="display: block; margin-bottom: 1rem;">
+          <input type="checkbox" id="cookie-consent-checkbox" />
+          Google Analytics wertet Daten zur Website-Nutzung statistisch aus. Diese Daten helfen uns unsere Website und Werbemaßnahmen zu optimieren.
+      </label>
+      <div style="margin-top: 1rem;">
+          <button class="btn approve-consent">Zustimmen</button>
+          <button class="btn deny-consent">Ablehnen</button>
+      </div>
+  </div>
+  
+  <!-- Google Analytics 4 -->
+  {{- with .Site.Params.google.analytics.id }}
+  {{- $script := resources.GetRemote "https://cdn.jsdelivr.net/npm/@minimal-analytics/ga4/dist/index.js" }}
+  
+  <script>
+      // Funktion zum Setzen des Cookies
+      function createCookie(name, value, days) {
+          let expires = "";
+          if (days) {
+              let date = new Date();
+              date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+              expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+      }
+  
+      // Funktion zum Lesen des Cookies
+      function readCookie(name) {
+          let nameEQ = encodeURIComponent(name) + "=";
+          let ca = document.cookie.split(';');
+          for (let i = 0; i < ca.length; i++) {
+              let c = ca[i].trim();
+              if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length));
+          }
+          return null;
+      }
+  
+      document.addEventListener("DOMContentLoaded", function() {
+          const consentCookie = readCookie('consent-settings');
+  
+          if (consentCookie === '1') {
+              loadAnalytics();
+              document.getElementById('consent-notice').style.display = 'none';
+          } else {
+              document.getElementById('consent-notice').style.display = 'block';
+          }
+  
+          document.querySelector('.manage-consent').addEventListener('click', function() {
+              document.getElementById('consent-notice').style.display = 'none';
+              document.getElementById('manage-consent').style.display = 'block';
+          });
+  
+          // Handler für alle Zustimmen-Buttons
+          document.querySelectorAll('.approve-consent').forEach(button => {
+              button.addEventListener('click', function() {
+                  const checkbox = document.getElementById('cookie-consent-checkbox');
+                  if (checkbox.checked || this.textContent === 'Alle zulassen') {
+                      createCookie('consent-settings', '1', 30);
+                      loadAnalytics();
+                      document.getElementById('manage-consent').style.display = 'none';
+                      document.getElementById('consent-notice').style.display = 'none'; // Schließt den Banner nach Zustimmung
+                  } else {
+                      alert('Bitte stimmen Sie der Verwendung von Cookies zu.');
+                  }
+              });
+          });
+  
+          // Handler für alle Ablehnen-Buttons
+          document.querySelectorAll('.deny-consent').forEach(button => {
+              button.addEventListener('click', function() {
+                  createCookie('consent-settings', '0', 30);
+                  document.getElementById('manage-consent').style.display = 'none';
+                  document.getElementById('consent-notice').style.display = 'none'; // Schließt den Banner nach Ablehnung
+              });
+          });
+  
+          function loadAnalytics() {
+              window.minimalAnalytics = {
+                  trackingId: '{{ . }}',
+                  autoTrack: true,
+              };
+  
+              // Google Analytics 4 Skript hinzufügen
+              let gaScript = document.createElement('script');
+              gaScript.src = "https://www.googletagmanager.com/gtag/js?id={{ . }}";
+              gaScript.async = true;
+              document.head.appendChild(gaScript);
+  
+              // Google Analytics Initialisierung
+              gaScript.onload = function() {
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '{{ . }}');
+              };
+  
+              // Minimal Analytics Skript laden
+              let s = document.createElement('script');
+              s.src = "{{ $script.RelPermalink }}";
+              s.async = true;
+              document.head.appendChild(s);
+          }
+      });
+  </script>
+  {{- end }}
+  
