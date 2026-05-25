@@ -28,7 +28,7 @@ Donauschwabenweg 10
 72108 Ergenzingen
 
 Telefon: +491525150968  
-E-Mail: überrenditen(ätt)gmail.com
+E-Mail: überrenditen(ät)gmail.com
 
 ‍
 
