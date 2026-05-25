@@ -27,7 +27,7 @@ Betül Öztürk
 Donauschwabenweg 10  
 72108 Ergenzingen
 
-Telefon: +4915251509689  
+Telefon: +491525150968  
 E-Mail: überrenditen(ätt)gmail.com
 
 ‍
