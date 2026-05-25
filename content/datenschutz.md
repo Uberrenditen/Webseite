@@ -22,7 +22,7 @@ Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschut
 
 ‍
 
-**hivalueinvestor.de**  
+**überrenditen.de**  
 Betül Öztürk  
 Donauschwabenweg 10  
 72108 Ergenzingen
@@ -199,9 +199,9 @@ Die Datenschutzhinweise, Auskunftsmöglichkeiten und Widerspruchmöglichkeiten (
 Instagram (Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA) – Datenschutzerklärung/ Opt-Out: https://www.instagram.com/about/legal/privacy/.
 Haftungsausschluss
 
-Mit Nutzung der Angebote und Informationen von dieser Webpräsenz hivalueinvestor.de erklären Sie Ihr Einverständnis zu den nachfolgenden Bedingungen:
+Mit Nutzung der Angebote und Informationen von dieser Webpräsenz überrenditen.de erklären Sie Ihr Einverständnis zu den nachfolgenden Bedingungen:
 
-Alle Texte sowie jegliche Hinweise und Informationen stellen weder Anlageberatung noch Empfehlung zum Kauf oder Verkauf von Wertpapieren dar (§ 85 WpHG). Sie dienen lediglich der allgemeinen und unverbindlichen Information. Es wird keine Empfehlung für bestimmte Anlagestrategien abgegeben. Die Inhalte von www.hivalueinvestor.de richten sich ausschließlich an natürliche Personen mit Wohnsitz in Deutschland.
+Alle Texte sowie jegliche Hinweise und Informationen stellen weder Anlageberatung noch Empfehlung zum Kauf oder Verkauf von Wertpapieren dar (§ 85 WpHG). Sie dienen lediglich der allgemeinen und unverbindlichen Information. Es wird keine Empfehlung für bestimmte Anlagestrategien abgegeben. Die Inhalte von www.überrenditen.de richten sich ausschließlich an natürliche Personen mit Wohnsitz in Deutschland.
 
 Die veröffentlichten Artikel, Analysen, Kennzahlen, Daten, Tools und Prognosen sind mit größter Sorgfalt und nach bestem Wissen und Gewissen recherchiert und erstellt. Die Quellen wurden während der Recherche als als vertrauenswürdig erachtet. Eine Garantie, Gewährleistung oder Haftung für die Richtigkeit, Vollständigkeit und Aktualität der zur Verfügung gestellten Inhalte und Informationen kann jedoch zu keinem Zeitpunkt übernommen werden.
 

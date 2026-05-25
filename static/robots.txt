@@ -5,5 +5,5 @@ User-agent: *
 Disallow: /private/
 
 # Gibt den Suchmaschinen den Standort der Sitemap an
-Sitemap: hivalueinvestor.de/sitemap.xml
+Sitemap: überrenditen.de/sitemap.xml
 

@@ -7,7 +7,7 @@ title = 'Bitte'
 ## Bitteschön
 
 ## 👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻
-[![Value Investing](/images/a/bitte.webp)](/docs/hivalueinvestor.de.pdf)
+[![Value Investing](/images/a/bitte.webp)](/docs/überrenditen.de.pdf)
 
 
 

@@ -38,7 +38,7 @@ Kontakt
 
 Betül Öztürk
 Mail: HiValueInvestor(ätt)gmail.com
-‍Website: hivalueinvestor.de
+‍Website: überrenditen.de
 
 ‍
 
