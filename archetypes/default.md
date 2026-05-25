@@ -2,10 +2,10 @@
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 draft = false
-description = 'Value Investing - Ein HiValueInvestor recherchiert und investiert in Aktien'
+description = 'Value Investing - Ein überrenditen recherchiert und investiert in Aktien'
 image = "/images/value-investing1.webp"
 imageBig = "/images/value-investing1.webp"
 value = ["Aktie"]
-authors = ["HiValueInvestor"]
+authors = ["überrenditen"]
 avatar = "/images/avatar.webp"
 +++

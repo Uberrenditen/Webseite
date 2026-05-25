@@ -2,12 +2,12 @@
 title = 'Sei Lama statt mit Bullen und Bären zu kämpfen.'
 date = 2025-08-15T16:55:24+01:00
 draft = false
-description = "Wer steckt hinter HiValueInvestor? und warum kämpfen wir nicht mit Bullen und Bären? "
+description = "Wer steckt hinter überrenditen? und warum kämpfen wir nicht mit Bullen und Bären? "
 
 image = "/images/value-investing.webp"
 imageBig = "/images/value-investing.webp"
 value = ["Value-Investor"]
-authors = ["HiValueInvestor"]
+authors = ["überrenditen"]
 
 avatar = "/images/a/value.webp"
 
@@ -44,7 +44,7 @@ Eile führt oft in die Irre und in der Irre verliert man schnell den Weg!
 
 
 
-## ✨ Ein HiValueInvestor eilt nicht und lässt sich Zeit!
+## ✨ Ein überrenditen eilt nicht und lässt sich Zeit!
 
 Soviel Zeit bis man vom Heizungsmonteur zum IT-Manager wird. &nbsp;
 
@@ -166,7 +166,7 @@ und natürlich das Programmieren.  &nbsp;
 
 Ich entwickle seit über einem Jahr ein Aktienanalysetool.  &nbsp;
 
-Damit bin ich in der Lage wie ein HiValueInvestor zu investieren.. Ruhig, Gelassen und ohne Emotionen (FOMO)  &nbsp;
+Damit bin ich in der Lage wie ein überrenditen zu investieren.. Ruhig, Gelassen und ohne Emotionen (FOMO)  &nbsp;
 
 Anhand von Fundamentaldaten erkennt mein Tool, &nbsp;
 

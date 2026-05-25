@@ -5,7 +5,7 @@ draft = false
 description = "Stell dir einen Mann vor, der im Krieg als Codeknacker arbeitet.Jemand der wegen seinen politischen Überzeugungen gefeuert wird.Ein Stehaufmännchen der nicht aufgibt und seine Fähigkeiten auf die Finanzwelt anwendet.Ein Börsenprofi mit sagenhaften 66% Rendite pro Jahr."
 image = "/images/value-investing2.webp"
 value = ["Value-Investing"]
-authors = ["HiValueInvestor"]
+authors = ["überrenditen"]
 avatar = "/images/a/value-investing.webp"
 +++
 

@@ -31,7 +31,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [taxonomies]
   value = "value"
-  author = "HiValueInvestor"
+  author = "überrenditen"
 
 [outputs]
   home = ["HTML", "RSS"]

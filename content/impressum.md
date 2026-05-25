@@ -37,7 +37,7 @@ Steuer-ID.: 86343/21762
 Kontakt
 
 Betül Öztürk
-Mail: HiValueInvestor(ätt)gmail.com
+Mail: überrenditen(ätt)gmail.com
 ‍Website: überrenditen.de
 
 ‍
@@ -82,7 +82,7 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 Beteiligung an der Streitbeilegungsplattform der Europäischen Kommission
 
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Bei Fragen oder Problemen kannst du dich auch jederzeit bei unter HiValueInvestor(ätt)gmail.com melden. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Bei Fragen oder Problemen kannst du dich auch jederzeit bei unter überrenditen(ätt)gmail.com melden. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ‍
 
@@ -122,7 +122,7 @@ Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erf
 
 Auskunft, Löschung und Berichtigung
 
-Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.Jeder Parqet-Nutzer kann im Profil die Löschung des Accounts vornehmen. Durch diese Löschung werden sämtliche Daten des Nutzers bei Parqet gelöscht, inklusive Portfolio-Daten, Aktivitäten, E-Mails, Namen und mehr. Welche Daten wir genau speichern und wofür ist unserer Datenschutz-Seite zu entnehmen. Lediglich Rechnungen (und die darauf ersichtlichen Daten) müssen wir aus rechtlichen Gründen vorhalten. Ansonsten werden automatisch sämtliche Daten gelöscht. Falls durch einen Fehler die Daten nicht vollständig gelöscht wurden, kann dies via HiValueInvestor(ätt)gmail.com gemeldet werden.
+Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.Jeder Parqet-Nutzer kann im Profil die Löschung des Accounts vornehmen. Durch diese Löschung werden sämtliche Daten des Nutzers bei Parqet gelöscht, inklusive Portfolio-Daten, Aktivitäten, E-Mails, Namen und mehr. Welche Daten wir genau speichern und wofür ist unserer Datenschutz-Seite zu entnehmen. Lediglich Rechnungen (und die darauf ersichtlichen Daten) müssen wir aus rechtlichen Gründen vorhalten. Ansonsten werden automatisch sämtliche Daten gelöscht. Falls durch einen Fehler die Daten nicht vollständig gelöscht wurden, kann dies via überrenditen(ätt)gmail.com gemeldet werden.
 
 ‍
 
@@ -138,7 +138,7 @@ Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, d�
 Newsletter abbestellen
 
 [Wenn du deinen Newsletter abbestellen möchtest, 🔴 **klicke hier** 🔴
-](https://hivalueinvestor.us9.list-manage.com/unsubscribe?u=652a6017c6f5a138b39a2c1e3&id=6729c4cc45&t=1)
+](https://überrenditen.us9.list-manage.com/unsubscribe?u=652a6017c6f5a138b39a2c1e3&id=6729c4cc45&t=1)
 
 
 

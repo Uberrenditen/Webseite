@@ -6,7 +6,7 @@ description = "Depotupdate mit allen Käufen und Verkäufen"
 
 image = "/images/lilu.webp"
 value = ["Value-Investor"]
-authors = ["HiValueInvestor"]
+authors = ["überrenditen"]
 
 avatar = "/images/a/value.webp"
 +++

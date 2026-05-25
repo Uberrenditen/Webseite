@@ -28,7 +28,7 @@ Donauschwabenweg 10
 72108 Ergenzingen
 
 Telefon: +4915251509689  
-E-Mail: HiValueInvestor(ätt)gmail.com
+E-Mail: überrenditen(ätt)gmail.com
 
 ‍
 
@@ -168,7 +168,7 @@ Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr ve
 
 Empfänger eines Widerspruchs
 
-HiValueInvestor(ätt)gmail.com
+überrenditen(ätt)gmail.com
 
 ‍
 
@@ -205,7 +205,7 @@ Alle Texte sowie jegliche Hinweise und Informationen stellen weder Anlageberatun
 
 Die veröffentlichten Artikel, Analysen, Kennzahlen, Daten, Tools und Prognosen sind mit größter Sorgfalt und nach bestem Wissen und Gewissen recherchiert und erstellt. Die Quellen wurden während der Recherche als als vertrauenswürdig erachtet. Eine Garantie, Gewährleistung oder Haftung für die Richtigkeit, Vollständigkeit und Aktualität der zur Verfügung gestellten Inhalte und Informationen kann jedoch zu keinem Zeitpunkt übernommen werden.
 
-Du hast diesen Haftungsausschluss bis hier tatsächlich gelesen? Wenn du das hier lesen kannst, bist du vielleicht der Erste. Schreib mir doch bitte eine Email an HiValueInvestor(ätt)gmail.com mit dem Titel “Habe den Haftungsausschluss gelesen” - und ich lasse dir eine Kleinigkeit zukommen.
+Du hast diesen Haftungsausschluss bis hier tatsächlich gelesen? Wenn du das hier lesen kannst, bist du vielleicht der Erste. Schreib mir doch bitte eine Email an überrenditen(ätt)gmail.com mit dem Titel “Habe den Haftungsausschluss gelesen” - und ich lasse dir eine Kleinigkeit zukommen.
 
 ‍
 
