@@ -88,7 +88,13 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 
 &nbsp;
 
-## Schritt 1: Trade Republic-App installieren
+## Schritt 1: Broker-App installieren
+![Broker installieren](/images/aktien.webp)
+Ich habe zwei Konten. Einmal für meine Frau und mich. 
+Hier nutzen wir Scallable Capital
+
+Einmal für meine Tochter wo das Kindergeld drauf landet.
+Hier nutzen wir Trade Republic
 
 
 
@@ -96,26 +102,30 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 &nbsp;
 
 ## Schritt 2: Konto erstellen
+![Konto erstellen](/images/a/aktienanalyse.webp)
 
 
 &nbsp;
 
 ## Schritt 3: Identität verifizieren
+![Identität verifizieren](/images/a/Finanzblog.webp)
 
 
 
 &nbsp;
 
 ## Schritt 4: Geld einzahlen
+![Geld einzahlen](/images/berkshire.webp)
 
 &nbsp;
 
 ## Schritt 5: Sparplan erstellen
-
+![Sparplan erstellen](/images/lilu.webp)
 
 &nbsp;
 
 ## Schritt 6: Zyklus festlegen
+![Zyklus festlegen](/images/uberrendite.webp)
 
 &nbsp;
 
@@ -148,4 +158,3 @@ Willst du zuschauen, wie dein Geld schrumpft – oder willst du, dass es für di
 &nbsp;
 
 Disclaimer: Investieren an der Börse ist mit Risiken verbunden. Historische Renditen sind keine Garantie für die Zukunft. Dieser Text ist keine Anlageberatung.
-
