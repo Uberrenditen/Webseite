@@ -90,7 +90,7 @@ Dies ist einer der beliebtesten Indizes weltweit. Er enthält über 3.700 Untern
 
 Wenn du monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 20 Jahren investierst, baust du ein beachtliches Vermögen auf.
 
-Bei 8% sind es 295.000 EURO
+## Bei 8% sind es 295.000 EURO
 
 
 Das Depot: Eröffne bei einem Broker (wie Trade Republic) dein Depot. Dauer: 5 Minuten.
