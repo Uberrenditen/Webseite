@@ -17,14 +17,16 @@ Du sparst.
 Und am Ende des Monats bleibt: SOGUT WIE NICHTS.
 
 
+###
 
 
 
-### Wir wurden darauf konditioniert zu glauben, Sparen sei sicher. 
-
+### Wir wurden darauf konditioniert zu glauben, 
+### Sparen sei sicher. 
 ### Das ist eine LÜGE!
 
 
+###
 
 In wirklichkeit passieren genau diese Dinge 👇
 
