@@ -16,7 +16,7 @@ Du sparst...
 
 und am Ende des Monats bleibt fast nichts übrig.
 
-Du weist dass du dich nicht auf die Rente verlassen kannst!
+Du weist, dass du dich nicht auf die Rente verlassen kannst!
 
 
 ###
@@ -135,8 +135,15 @@ Das ist der Weg des geringsten Widerstands.
 &nbsp;
 
 Oder du übernimmst jetzt die Kontrolle! 
+&nbsp;
+
+###
 Die beste Zeit war vor 10 Jahren. 
-Die zweitbeste Zeit ist heute.
+
+&nbsp;
+
+###
+Die zweitbeste Zeit ist heute!
 
 &nbsp;
 
