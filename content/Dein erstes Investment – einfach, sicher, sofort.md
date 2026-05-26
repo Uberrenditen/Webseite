@@ -99,6 +99,25 @@ Hier nutzen wir Trade Republic
 
 
 
+
+## Schritt 1: Broker-App installieren
+
+Ich habe zwei Konten. Einmal für meine Frau und mich. Hier nutzen wir Scalable Capital. 
+Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir Trade Republic.
+
+<div style="display: flex; gap: 20px; margin-top: 20px;">
+  <a href="DEIN_LINK_ZU_SCALABLE" target="_blank">
+    <img src="/images/scalable-button.webp" alt="Scalable Capital" style="width: 200px; border-radius: 8px;">
+  </a>
+  <a href="DEIN_LINK_ZU_TRADE_REPUBLIC" target="_blank">
+    <img src="/images/traderepublic-button.webp" alt="Trade Republic" style="width: 200px; border-radius: 8px;">
+  </a>
+</div>
+
+
+
+
+
 &nbsp;
 
 ## Schritt 2: Konto erstellen
