@@ -91,7 +91,7 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 
 
 Ich nutze seit 5 Jahren Scalable Capital * 
-und bin damit sehr zufrieden.
+und bin damit sehr zufrieden. Klicke auf das Bild 👇
 
 <div style="display: flex; gap: 30px; margin-top: 30px;">
   <a href="https://de.scalable.capital/trading-aff?utm_medium=affiliate&utm_source=qualityclick&utm_campaign=broker&utm_term=510&c_id=QC5c486e706c7e687271557e435a4f6174U6276g6b747a567c42" target="_blank">
