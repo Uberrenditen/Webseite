@@ -98,24 +98,59 @@ Wenn du monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 
 &nbsp;
 
 
-Das Depot: Eröffne bei einem Broker (wie Trade Republic) dein Depot. Dauer: 5 Minuten.
 
-Der Motor: Wähle einen weltweit gestreuten ETF (z.B. den FTSE All-World). Damit bist du an über 3.000 Unternehmen beteiligt. Risikostreuung in Perfektion.
+&nbsp;
 
-Der Autopilot: Richte einen Sparplan ein. Ab 1 € möglich. 
-Dein Geld arbeitet ab jetzt von alleine.
+## Schritt 1: Trade Republic-App installieren
 
-Die harte Wahrheit: Deine Entscheidung von heute bestimmt dein Leben von morgen.
+
+
+
+&nbsp;
+
+## Schritt 2: Konto erstellen
+
+
+&nbsp;
+
+## Schritt 3: Identität verifizieren
+
+
+
+&nbsp;
+
+## Schritt 4: Geld einzahlen
+
+&nbsp;
+
+## Schritt 5: Sparplan erstellen
+
+
+&nbsp;
+
+## Schritt 6: Zyklus festlegen
+
+
+
+Ich hoffe, dass du es durchgezogen hast!
+
+&nbsp;
+
+Deine Entscheidung von heute bestimmt dein Leben von morgen.
 Du kannst dieses Fenster schließen und so tun, als wäre das Problem der Inflation und der Altersarmut nicht da. 
 Das ist der Weg des geringsten Widerstands.
+
+&nbsp;
 
 Oder du übernimmst jetzt die Kontrolle! 
 Die beste Zeit war vor 10 Jahren. 
 Die zweitbeste Zeit ist heute.
 
+&nbsp;
+
 Willst du zuschauen, wie dein Geld schrumpft – oder willst du, dass es für dich arbeitet?
 
-[Jetzt mein Depot eröffnen und die Kontrolle übernehmen]
+&nbsp;
 
 Disclaimer: Investieren an der Börse ist mit Risiken verbunden. Historische Renditen sind keine Garantie für die Zukunft. Dieser Text ist keine Anlageberatung.
 
