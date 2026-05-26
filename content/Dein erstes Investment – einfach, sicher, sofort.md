@@ -10,14 +10,21 @@ avatar = "/images/a/value-investing.webp"
 
 
 Du arbeitest hart. 
+
 Du zahlst Steuern. 
+
 Du sparst. 
+
 Und am Ende des Monats bleibt: NICHTS.
 
 Oder schlimmer: Dein Erspartes auf dem Konto wird Monat für Monat wertloser. 
 
+
+
 Wir wurden darauf konditioniert zu glauben, Sparen sei sicher. 
+
 Das ist eine LÜGE!
+
 
 In wirklichkeit passiert genau das 👇
 
