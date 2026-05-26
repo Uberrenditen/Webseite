@@ -110,7 +110,7 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) 
 &nbsp;
 
 ## Schritt 1: Konto erstellen
-Klicke auf Konto erstellen und gebe deine E-Mail-Adresse ein.
+„Klicke auf Konto eröffnen“ und gebe deine E-Mail-Adresse ein.
 Du erhältst kurz darauf eine E-Mail mit einem Bestätigungslink. Nach dem Klick auf den Link siehst du eine Übersicht über den weiteren Ablauf. Klicke auf „Jetzt starten“, um fortzufahren.
 ![Konto erstellen](/images/1.webp)
 
@@ -137,7 +137,7 @@ Gib nun deine persönlichen Daten ein (Anrede, Name, Wohnanschrift, Geburtsdatum
 Steuernummer: Die Angabe ist optional, aber sinnvoll, wenn du bereits ein Depot übertragen möchtest. Scalable Capital beantragt dann automatisch die steuerliche Verrechnung deiner Freibeträge beim Finanzamt.
 
 Sicherheit: Wähle ein sicheres Passwort für deinen Login, da dein Konto als Zugang zu deinem Vermögen dient.
-![Identität verifizieren](/images/3.webp)
+
 
 &nbsp;
 
