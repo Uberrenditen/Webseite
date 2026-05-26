@@ -8,7 +8,6 @@ authors = ["überrenditen"]
 avatar = "/images/a/value-investing.webp"
 +++
 
-
 Du arbeitest hart. 
 
 Du zahlst Steuern. 
