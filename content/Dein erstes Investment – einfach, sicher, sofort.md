@@ -59,7 +59,7 @@ Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte En
 
 &nbsp;
 
-### So habe ich das geändert!
+### Das wird dir in der Schule nicht gelehrt!
 
 
 &nbsp;
