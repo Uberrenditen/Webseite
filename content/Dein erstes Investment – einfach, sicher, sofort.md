@@ -109,40 +109,118 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) 
 
 &nbsp;
 
-## Schritt 2: Konto erstellen
+## Schritt 1: Konto erstellen
 Klicke auf Konto erstellen und gebe deine E-Mail-Adresse ein.
-Anschließend bekommst du eine E-Mail die du bestätigen musst.
-![Konto erstellen](/images/3.webp)
+Du erhältst kurz darauf eine E-Mail mit einem Bestätigungslink. Nach dem Klick auf den Link siehst du eine Übersicht über den weiteren Ablauf. Klicke auf „Jetzt starten“, um fortzufahren.
+![Konto erstellen](/images/1.webp)
 
 
 &nbsp;
 
-## Schritt 3: Identität verifizieren
-![Identität verifizieren](/images/a/Finanzblog.webp)
+## Schritt 2: Das passende Brokermodell wählen
+Scalable Capital bietet drei verschiedene Kontomodelle an, zwischen denen du jederzeit wechseln kannst:
+
+Free Broker: Ideal für Einsteiger und Sparplan-Anleger.
+
+Prime Broker: Lohnt sich bei häufigeren Transaktionen.
+
+Prime+ Broker: Bietet zusätzliche Vorteile wie Zinsen auf das Guthaben.
+
+Tipp: Als Neukunde kannst du den Prime-Status oft für drei Monate kostenlos testen, bevor die jährliche Gebühr anfällt. Für den reinen Vermögensaufbau per Sparplan ist der Free Broker bereits die beste Wahl.
+![Identität verifizieren](/images/2.webp)
+
+&nbsp;
+
+## Schritt 3: Persönliche Daten angeben
+Gib nun deine persönlichen Daten ein (Anrede, Name, Wohnanschrift, Geburtsdatum, Geburtsort und Telefonnummer).
+
+Steuernummer: Die Angabe ist optional, aber sinnvoll, wenn du bereits ein Depot übertragen möchtest. Scalable Capital beantragt dann automatisch die steuerliche Verrechnung deiner Freibeträge beim Finanzamt.
+
+Sicherheit: Wähle ein sicheres Passwort für deinen Login, da dein Konto als Zugang zu deinem Vermögen dient.
+![Identität verifizieren](/images/3.webp)
+
+&nbsp;
+
+## Schritt 4: Ersteinzahlung vornehmen
+Die Ersteinzahlung ist fester Bestandteil der Depoteröffnung. Wähle zwischen einer Überweisung oder einem Lastschriftmandat.
+
+Wichtig: Das Konto muss zwingend auf deinen Namen lauten. Aufgrund des Geldwäschegesetzes akzeptiert die Bank keine Zahlungen von Drittkonten. Achte zudem darauf, dass dein vollständiger Name korrekt hinterlegt ist, um Verzögerungen zu vermeiden. Hinweis: Eine Überweisung wird in der Regel schneller verarbeitet als ein Lastschrifteinzug.
+![Identität verifizieren](/images/4.webp)
 
 
 
 &nbsp;
 
-## Schritt 4: Geld einzahlen
+
+
+
+
+## Schritt 5: Angaben prüfen
+Gehe deine Eingaben sorgfältig durch. Überprüfe insbesondere deine persönlichen Daten auf Tippfehler, bevor du den Vorgang abschließt.
+![Identität verifizieren](/images/5.webp)
+
+
+
+&nbsp;
+
+
+
+
+
+## Schritt 6: Identitätsprüfung (Verifizierung)
+Um gesetzliche Anforderungen zu erfüllen, musst du dich ausweisen. Wähle eine der folgenden Methoden:
+
+eID-Verfahren: Schnell und unkompliziert mit dem neuen Personalausweis.
+
+Video-Ident: Registrierung per Videochat über die App (gültiges Ausweisdokument erforderlich).
+
+PostIdent: Der klassische Weg in einer Postfiliale (zeitaufwendiger).
+
+Empfehlung: Nutze für eine sofortige Aktivierung das eID-Verfahren oder Video-Ident.
+![Identität verifizieren](/images/6.webp)
+
+
+
+&nbsp;
+
+
+
+
+
+
+## Schritt 7: Freischaltung abwarten
+Nach erfolgreicher Verifizierung prüft Scalable Capital deine Unterlagen. Dies dauert in der Regel 1 bis 2 Werktage. Sobald du die Bestätigungs-E-Mail erhältst, ist dein Depot einsatzbereit und du kannst direkt mit deinem Vermögensaufbau starten.
+
+Was könnte ich für dich als Nächstes tun?
+Soll ich für diese Anleitung noch eine kurze Checkliste mit den benötigten Unterlagen (z. B. Ausweis, Smartphone) erstellen, damit die Leser alles zur Hand haben, bevor sie starten?
+![Identität verifizieren](/images/7.webp)
+
+
+
+&nbsp;
+
+
+
+
+## Schritt 8: Geld einzahlen
 Bevor du bei Scalable Capital Wertpapiere oder ETFs kaufen kannst, musst du Geld auf dein Depot senden. Klicke auf Zahlungen und dann auf Einzahlung. 
-![Geld einzahlen](/images/berkshire.webp)
+![Geld einzahlen](/images/8.webp)
 
 &nbsp;
 
-## Schritt 5: Sparplan erstellen
+## Schritt 9: Sparplan erstellen
 Auf der Startseite von Scalable Capital findest du unten dem Punkt "Sparpläne" Hier kann man ein ETF auswählen. Wir besparen den
 Invesco FTSE All-World UCITS ETF Acc
 
-![Sparplan erstellen](/images/5.webp)
+![Sparplan erstellen](/images/9.webp)
 
 &nbsp;
 
-## Schritt 6: Zyklus festlegen
+## Schritt 10: Zyklus festlegen
 Du kannst den Sparplan jetzt einrichten und die Ausführungsoptionen anpassen.
 
 Anschließend aktivierst du den Sparplan: Das Geld wird dann zum festgelegten Termin erstmalig abgebucht und du wirst in Zukunft monatlich in den Sparplan automatisch einbezahlen.
-![Zyklus festlegen](/images/6.webp)
+![Zyklus festlegen](/images/10.webp)
 
 &nbsp;
 
