@@ -91,8 +91,8 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 
 ## Schritt 1: Broker-App installieren
 
-Ich habe zwei Konten. Einmal für meine Frau und mich. Hier nutzen wir Scalable Capital. 
-Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir Trade Republic.
+Ich habe zwei Konten. Einmal für meine Frau und mich. Hier nutzen wir (1.) Scalable Capital. 
+Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) Trade Republic. Wir finden beide gleich gut!
 
 <div style="display: flex; gap: 30px; margin-top: 30px;">
   <a href="DEIN_LINK_ZU_SCALABLE" target="_blank">
@@ -110,7 +110,9 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir Trade
 &nbsp;
 
 ## Schritt 2: Konto erstellen
-![Konto erstellen](/images/a/aktienanalyse.webp)
+Klicke auf Konto erstellen und gebe deine E-Mail-Adresse ein.
+Anschließend bekommst du eine E-Mail die du bestätigen musst.
+![Konto erstellen](/images/a/3.webp)
 
 
 &nbsp;
@@ -123,17 +125,24 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir Trade
 &nbsp;
 
 ## Schritt 4: Geld einzahlen
+Bevor du bei Scalable Capital Wertpapiere oder ETFs kaufen kannst, musst du Geld auf dein Depot senden. Klicke auf Zahlungen und dann auf Einzahlung. 
 ![Geld einzahlen](/images/berkshire.webp)
 
 &nbsp;
 
 ## Schritt 5: Sparplan erstellen
-![Sparplan erstellen](/images/lilu.webp)
+Auf der Startseite von Scalable Capital findest du unten dem Punkt "Sparpläne" Hier kann man ein ETF auswählen. Wir besparen den
+Invesco FTSE All-World UCITS ETF Acc
+
+![Sparplan erstellen](/images/5.webp)
 
 &nbsp;
 
 ## Schritt 6: Zyklus festlegen
-![Zyklus festlegen](/images/uberrendite.webp)
+Du kannst den Sparplan jetzt einrichten und die Ausführungsoptionen anpassen.
+
+Anschließend aktivierst du den Sparplan: Das Geld wird dann zum festgelegten Termin erstmalig abgebucht und du wirst in Zukunft monatlich in den Sparplan automatisch einbezahlen.
+![Zyklus festlegen](/images/6.webp)
 
 &nbsp;
 
