@@ -1,0 +1,46 @@
+
+{{ define "main" }}
+
+  {{ $fileBaseName := .File.BaseFileName }}
+
+  {{ $contentClass := dict "datenschutz" "datenschutzContent" "agb" "agbContent" "impressum" "impressumContent" "danke" "dankeContent" "bitte" "bitteContent"}}
+  {{ $class := index $contentClass $fileBaseName }}
+
+  {{ if $class }}
+    <!-- Nur den Inhalt der spezifischen Seite anzeigen -->
+    <div class="{{ $class }}">{{ .Content | safeHTML}}</div>
+    
+  {{ else }}
+
+    <div class="singleBottomHead">
+      <h1 class="singleHeadContent1">{{ .Title | safeHTML}}</h1>
+      <br>
+
+
+      <div class="singleRightBar">{{ partial "share.html" . | safeHTML}}</div>
+
+
+      <!--<p class="singleHeadContent2">{{ .Params.description | safeHTML}}</p> -->
+
+
+
+
+
+
+
+      
+
+    </div>
+    <br>
+
+
+    <div class="singleBottom">
+
+
+
+
+    {{ end }}
+
+{{ end }}
+
+
