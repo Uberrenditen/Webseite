@@ -3,7 +3,7 @@ title = 'In 10 Minuten vom Konto-Sparer zum Investor.'
 date = 2025-08-24T16:55:24+01:00
 draft = false
 description = "Du willst dein Geld für dich arbeiten lassen, weißt aber nicht wo anfangen? In 10 Minuten richtest du deinen ersten ETF-Sparplan ein – ohne Vorkenntnisse."
-image = "/images/value-investing2.webp"
+image = "/images/uberrenditen.webp"
 authors = ["überrenditen"]
 avatar = "/images/a/value-investing.webp"
 +++
@@ -88,8 +88,6 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 
 &nbsp;
 
-
-## Schritt 1: Broker-App installieren
 
 Ich habe zwei Konten. Einmal für meine Frau und mich. Hier nutzen wir (1.) Scalable Capital. 
 Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) Trade Republic. Wir finden beide gleich gut!
