@@ -12,9 +12,9 @@ Du arbeitest hart.
 
 Du zahlst Steuern. 
 
-Du sparst. 
+Du sparst... 
 
-Und am Ende des Monats bleibt fast nichts übrig.
+und am Ende des Monats bleibt fast nichts übrig.
 
 
 ###
@@ -30,14 +30,12 @@ Und am Ende des Monats bleibt fast nichts übrig.
 
 In wirklichkeit passieren genau diese Dinge 👇
 
-1. Die stille Enteignung (Inflation)
-Die Preise steigen, deine Kaufkraft sinkt. 
+1. Die Preise steigen, deine Kaufkraft sinkt. 
 Wenn du dein Geld heute auf dem Konto parkst, ist es in 10 Jahren garantiert weniger wert als heute. 
 Du verlierst Geld, indem du es einfach nur „sicher“ verwahrst.
 &nbsp;
 
-2. Deine Rente ist ein Kartenhaus
-Schau auf deinen Rentenbescheid. 
+2. Schau auf deinen Rentenbescheid. 
 Wenn du ehrlich zu dir bist, weißt du: Das reicht nicht. 
 Die Rentenlücke ist kein theoretisches Problem für „irgendwann“ 
 Es ist die Realität, auf die du täglich zusteuerst! 
@@ -45,14 +43,12 @@ Wenn du dich auf den Staat verlässt, verlässt du dich darauf, dass dein Lebens
 Pfandflaschen sammeln will niemand.
 &nbsp;
 
-3. Du verschenkst den Zinseszins
-Zeit ist die einzige Währung, die du niemals zurückgewinnen kannst. 
+3. Zeit ist die einzige Währung, die du niemals zurückgewinnen kannst. 
 Jeder Tag, an dem dein Geld nicht investiert ist, ist eine verpasste Rendite. 
 Der Zinseszins ist das achte Weltwunder – aber nur für diejenigen, die anfangen, bevor es zu spät ist.
 &nbsp;
 
-4. Das Hamsterrad-Gefängnis
-Ohne Investment bist du ein Sklave deines Gehaltsschecks. 
+4. Ohne Investment bist du ein Sklave deines Gehaltsschecks. 
 Wenn dein Einkommen wegfällt, bricht alles zusammen. 
 Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte Entscheidungsfreiheit über dein Leben zu gewinnen.
 &nbsp;
@@ -61,19 +57,32 @@ Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte En
 ###
 
 
-Die Börse ist deine einzige Chance!
+### Die Börse ist deine einzige Chance!
 Die meisten Menschen haben Angst vor der Börse, weil sie „Zocken“ mit „Investieren“ verwechseln. 
 FALSCH!
 
 Du kaufst keine Lottoscheine. 
+&nbsp;
+
+
 Du kaufst Anteile an den produktivsten Unternehmen der Welt. 
 Apple, Microsoft, Amazon – die weltweite Wirtschaft arbeitet für dich. 
+
+&nbsp;
+
+
 Während du schläfst, verdienen diese Unternehmen Geld. 
 Und wenn du investiert bist, gehört ein Stück dieses Wachstums dir.
+
+&nbsp;
+
 
 
 Du brauchst keinen Finanzberater, der dir teure Produkte verkauft! 
 Du brauchst ein System, das läuft, während du dein Leben lebst.
+
+&nbsp;
+
 
 
 
