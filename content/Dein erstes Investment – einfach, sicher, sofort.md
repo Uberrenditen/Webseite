@@ -110,7 +110,7 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) 
 &nbsp;
 
 ## Schritt 1: Konto erstellen
-„Klicke auf Konto eröffnen“ und gebe deine E-Mail-Adresse ein.
+Klicke auf „Konto eröffnen“ und gebe deine E-Mail-Adresse ein.
 Du erhältst kurz darauf eine E-Mail mit einem Bestätigungslink. Nach dem Klick auf den Link siehst du eine Übersicht über den weiteren Ablauf. Klicke auf „Jetzt starten“, um fortzufahren.
 ![Konto erstellen](/images/1.webp)
 
@@ -156,8 +156,6 @@ Wichtig: Das Konto muss zwingend auf deinen Namen lauten. Aufgrund des Geldwäsc
 
 ## Schritt 5: Angaben prüfen
 Gehe deine Eingaben sorgfältig durch. Überprüfe insbesondere deine persönlichen Daten auf Tippfehler, bevor du den Vorgang abschließt.
-![Identität verifizieren](/images/5.webp)
-
 
 
 &nbsp;
@@ -176,7 +174,6 @@ Video-Ident: Registrierung per Videochat über die App (gültiges Ausweisdokumen
 PostIdent: Der klassische Weg in einer Postfiliale (zeitaufwendiger).
 
 Empfehlung: Nutze für eine sofortige Aktivierung das eID-Verfahren oder Video-Ident.
-![Identität verifizieren](/images/6.webp)
 
 
 
