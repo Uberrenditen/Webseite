@@ -15,10 +15,9 @@ Du zahlst Steuern.
 &nbsp;
 Du sparst. 
 &nbsp;
-Und am Ende des Monats bleibt: NICHTS.
+Und am Ende des Monats bleibt: SOGUT WIE NICHTS.
 &nbsp;
-Oder schlimmer: Dein Erspartes auf dem Konto wird Monat für Monat wertloser. 
-&nbsp;
+
 
 
 Wir wurden darauf konditioniert zu glauben, Sparen sei sicher. 
