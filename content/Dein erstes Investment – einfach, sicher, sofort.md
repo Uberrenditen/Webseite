@@ -190,10 +190,6 @@ Empfehlung: Nutze für eine sofortige Aktivierung das eID-Verfahren oder Video-I
 ## Schritt 7: Freischaltung abwarten
 Nach erfolgreicher Verifizierung prüft Scalable Capital deine Unterlagen. Dies dauert in der Regel 1 bis 2 Werktage. Sobald du die Bestätigungs-E-Mail erhältst, ist dein Depot einsatzbereit und du kannst direkt mit deinem Vermögensaufbau starten.
 
-Was könnte ich für dich als Nächstes tun?
-Soll ich für diese Anleitung noch eine kurze Checkliste mit den benötigten Unterlagen (z. B. Ausweis, Smartphone) erstellen, damit die Leser alles zur Hand haben, bevor sie starten?
-![Identität verifizieren](/images/7.webp)
-
 
 
 &nbsp;
