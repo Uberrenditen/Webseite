@@ -59,16 +59,13 @@ Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte En
 &nbsp;
 
 ### Die Börse ist deine einzige Chance!
-Die meisten Menschen haben Angst vor der Börse, weil sie „Zocken“ mit „Investieren“ verwechseln. 
-FALSCH!
+
 
 &nbsp;
 
-Du kaufst keine Lottoscheine. 
-&nbsp;
 
 
-Du kaufst Anteile an den produktivsten Unternehmen der Welt. 
+Kaufe Anteile an den produktivsten Unternehmen der Welt. 
 Apple, Microsoft, Amazon – die weltweite Wirtschaft arbeitet für dich. 
 
 &nbsp;
