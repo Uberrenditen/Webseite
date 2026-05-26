@@ -56,7 +56,9 @@ Ohne Investment bist du ein Sklave deines Gehaltsschecks.
 Wenn dein Einkommen wegfällt, bricht alles zusammen. 
 Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte Entscheidungsfreiheit über dein Leben zu gewinnen.
 &nbsp;
+&nbsp;
 
+###
 
 
 Die Börse ist deine einzige Chance!
