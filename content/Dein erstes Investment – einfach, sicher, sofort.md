@@ -88,16 +88,25 @@ Du brauchst ein System, das läuft, während du dein Leben lebst.
 Wenn ich heute von 0 beginnen würde, dann würde ich mit einem FTSE All-World ETF beginnen. 
 Dies ist einer der beliebtesten Indizes weltweit. Er enthält über 3.700 Unternehmen aus Industrie- und Schwellenländern und deckt damit nahezu die gesamte Weltwirtschaft ab.
 
+&nbsp;
+
 Wenn du monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 20 Jahren investierst, baust du ein beachtliches Vermögen auf.
 
+&nbsp;
+
 ## Bei 8% sind es 295.000 EURO
+
+## In 30 Jahren wären es 745.000 EURO
+
+&nbsp;
 
 
 Das Depot: Eröffne bei einem Broker (wie Trade Republic) dein Depot. Dauer: 5 Minuten.
 
 Der Motor: Wähle einen weltweit gestreuten ETF (z.B. den FTSE All-World). Damit bist du an über 3.000 Unternehmen beteiligt. Risikostreuung in Perfektion.
 
-Der Autopilot: Richte einen Sparplan ein. Ab 1 € möglich. Dein Geld arbeitet ab jetzt von alleine.
+Der Autopilot: Richte einen Sparplan ein. Ab 1 € möglich. 
+Dein Geld arbeitet ab jetzt von alleine.
 
 Die harte Wahrheit: Deine Entscheidung von heute bestimmt dein Leben von morgen.
 Du kannst dieses Fenster schließen und so tun, als wäre das Problem der Inflation und der Altersarmut nicht da. 
