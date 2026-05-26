@@ -25,12 +25,13 @@ Wir wurden darauf konditioniert zu glauben, Sparen sei sicher.
 Das ist eine LÜGE!
 &nbsp;
 
-In wirklichkeit passiert genau das 👇
+In wirklichkeit passieren genau diese Dinge 👇
 
 1. Die stille Enteignung (Inflation)
 Die Preise steigen, deine Kaufkraft sinkt. 
 Wenn du dein Geld heute auf dem Konto parkst, ist es in 10 Jahren garantiert weniger wert als heute. 
 Du verlierst Geld, indem du es einfach nur „sicher“ verwahrst.
+&nbsp;
 
 2. Deine Rente ist ein Kartenhaus
 Schau auf deinen Rentenbescheid. 
@@ -39,16 +40,19 @@ Die Rentenlücke ist kein theoretisches Problem für „irgendwann“
 Es ist die Realität, auf die du täglich zusteuerst! 
 Wenn du dich auf den Staat verlässt, verlässt du dich darauf, dass dein Lebensstandard im Alter kollabiert.
 Pfandflaschen sammeln will niemand.
+&nbsp;
 
 3. Du verschenkst den Zinseszins
 Zeit ist die einzige Währung, die du niemals zurückgewinnen kannst. 
 Jeder Tag, an dem dein Geld nicht investiert ist, ist eine verpasste Rendite. 
 Der Zinseszins ist das achte Weltwunder – aber nur für diejenigen, die anfangen, bevor es zu spät ist.
+&nbsp;
 
 4. Das Hamsterrad-Gefängnis
 Ohne Investment bist du ein Sklave deines Gehaltsschecks. 
 Wenn dein Einkommen wegfällt, bricht alles zusammen. 
 Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte Entscheidungsfreiheit über dein Leben zu gewinnen.
+&nbsp;
 
 
 
