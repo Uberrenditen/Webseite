@@ -32,7 +32,8 @@ Du weist, dass du dich nicht auf die Rente verlassen kannst!
 
 In wirklichkeit passieren genau diese Dinge 👇
 
-1. Die Preise steigen. Wenn du dein Geld heute auf dem Konto parkst, ist es in 10 Jahren weniger wert als heute. Deine Kaufkraft sinkt. 
+1. Die Preise steigen. Wenn du dein Geld heute auf dem Konto parkst, 
+ist es in 10 Jahren weniger wert als heute. Deine Kaufkraft sinkt. 
 Du verlierst Geld, indem du es einfach nur „sicher“ verwahrst.
 &nbsp;
 
@@ -89,15 +90,12 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 &nbsp;
 
 
-Ich habe zwei Konten. Einmal für meine Frau und mich. Hier nutzen wir (1.) Scalable Capital. 
-Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) Trade Republic. Wir finden beide gleich gut!
+Ich nutze seit 5 Jahren Scalable Capital * 
+und bin damit sehr zufrieden.
 
 <div style="display: flex; gap: 30px; margin-top: 30px;">
-  <a href="DEIN_LINK_ZU_SCALABLE" target="_blank">
+  <a href="https://de.scalable.capital/trading-aff?utm_medium=affiliate&utm_source=qualityclick&utm_campaign=broker&utm_term=510&c_id=QC5c486e706c7e687271557e435a4f6174U6276g6b747a567c42" target="_blank">
     <img src="/images/00.webp" alt="Scalable Capital" style="width: 300px; border-radius: 8px;">
-  </a>
-  <a href="DEIN_LINK_ZU_TRADE_REPUBLIC" target="_blank">
-    <img src="/images/0.webp" alt="Trade Republic" style="width: 300px; border-radius: 8px;">
   </a>
 </div>
 
@@ -242,4 +240,4 @@ Willst du zuschauen, wie dein Geld schrumpft – oder willst du, dass es für di
 
 &nbsp;
 
-Disclaimer: Investieren an der Börse ist mit Risiken verbunden. Historische Renditen sind keine Garantie für die Zukunft. Dieser Text ist keine Anlageberatung.
+Disclaimer: Es handelt sich hier um keine Kaufempfehlung oder Anlageberatung meinerseits. Es soll euch lediglich bei der Entscheidung helfen. Affiliatelinks sind mit einem * markiert. Wenn du etwas über diese Links kaufst, erhalte ich eine kleine Provision. Dies ermöglicht es mir, diesen Kanal kostenlos zu betreiben. Für dich hat es keinen Nachteil, wenn du diese Links benutzt. Ich danke dir 😊
