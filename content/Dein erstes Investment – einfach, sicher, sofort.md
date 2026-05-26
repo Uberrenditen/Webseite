@@ -145,7 +145,6 @@ Sicherheit: Wähle ein sicheres Passwort für deinen Login, da dein Konto als Zu
 Die Ersteinzahlung ist fester Bestandteil der Depoteröffnung. Wähle zwischen einer Überweisung oder einem Lastschriftmandat.
 
 Wichtig: Das Konto muss zwingend auf deinen Namen lauten. Aufgrund des Geldwäschegesetzes akzeptiert die Bank keine Zahlungen von Drittkonten. Achte zudem darauf, dass dein vollständiger Name korrekt hinterlegt ist, um Verzögerungen zu vermeiden. Hinweis: Eine Überweisung wird in der Regel schneller verarbeitet als ein Lastschrifteinzug.
-![Identität verifizieren](/images/4.webp)
 
 
 
@@ -210,7 +209,7 @@ Bevor du bei Scalable Capital Wertpapiere oder ETFs kaufen kannst, musst du Geld
 
 ## Schritt 9: Sparplan erstellen
 Auf der Startseite von Scalable Capital findest du unten dem Punkt "Sparpläne" Hier kann man ein ETF auswählen. Wir besparen den
-Invesco FTSE All-World UCITS ETF Acc
+Invesco FTSE All-World (Acc)
 
 ![Sparplan erstellen](/images/9.webp)
 
