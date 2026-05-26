@@ -107,10 +107,10 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir Trade
 
 <div style="display: flex; gap: 20px; margin-top: 20px;">
   <a href="DEIN_LINK_ZU_SCALABLE" target="_blank">
-    <img src="/images/scalable-button.webp" alt="Scalable Capital" style="width: 200px; border-radius: 8px;">
+    <img src="/images/1.webp" alt="Scalable Capital" style="width: 200px; border-radius: 8px;">
   </a>
   <a href="DEIN_LINK_ZU_TRADE_REPUBLIC" target="_blank">
-    <img src="/images/traderepublic-button.webp" alt="Trade Republic" style="width: 200px; border-radius: 8px;">
+    <img src="/images/2.webp" alt="Trade Republic" style="width: 200px; border-radius: 8px;">
   </a>
 </div>
 
