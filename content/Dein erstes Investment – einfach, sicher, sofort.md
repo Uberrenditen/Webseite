@@ -112,7 +112,7 @@ Einmal für meine Tochter, wo das Kindergeld drauf landet. Hier nutzen wir (2.) 
 ## Schritt 2: Konto erstellen
 Klicke auf Konto erstellen und gebe deine E-Mail-Adresse ein.
 Anschließend bekommst du eine E-Mail die du bestätigen musst.
-![Konto erstellen](/images/a/3.webp)
+![Konto erstellen](/images/3.webp)
 
 
 &nbsp;
