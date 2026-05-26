@@ -1,5 +1,5 @@
 +++
-title = 'Dein erstes Investment – einfach, sicher, sofort'
+title = 'In 10 Minuten vom Konto-Sparer zum Investor.'
 date = 2025-08-24T16:55:24+01:00
 draft = false
 description = "Du willst dein Geld für dich arbeiten lassen, weißt aber nicht wo anfangen? In 10 Minuten richtest du deinen ersten ETF-Sparplan ein – ohne Vorkenntnisse."
@@ -44,11 +44,33 @@ avatar = "/images/a/value-investing.webp"
 
 <div class="lp-wrap">
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Lass dein Geld für dich arbeiten – nicht umgekehrt.</h1>
-    <p>Kein Finanzstudium. Kein Startkapital. Nur 10 Minuten Zeit für deine finanzielle Freiheit.</p>
-    <a href="DEIN-AFFILIATE-LINK" class="btn-primary">Jetzt Sparplan starten →</a>
+  <section class="story-section">
+    <h2>Investieren ist kein Luxus – es ist eine Notwendigkeit.</h2>
+    <p>Viele Menschen glauben, Investieren wäre eine „Option“ für später. Doch wenn du dein Geld nur auf dem Konto liegen lässt, passiert jeden Tag etwas, das du meistens ignorierst:</p>
+
+    <div style="display: grid; gap: 1.5rem; margin: 2rem 0;">
+      <!-- Schmerzpunkt 1 -->
+      <div style="padding: 1.5rem; background: #fff; border-left: 4px solid #c0392b; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c0392b; margin-bottom: 0.5rem;">1. Die „stille Enteignung“ durch Inflation</h3>
+        <p style="font-family: sans-serif; font-size: 0.95rem;">Die Inflation frisst schleichend deine Kaufkraft. Was heute 1.000 € wert ist, kann in 10 Jahren deutlich weniger kaufen. Wer nicht investiert, verliert jedes Jahr garantiert an echtem Vermögen.</p>
+      </div>
+
+      <!-- Schmerzpunkt 2 -->
+      <div style="padding: 1.5rem; background: #fff; border-left: 4px solid #c0392b; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c0392b; margin-bottom: 0.5rem;">2. Der verlorene Zinseszins-Effekt</h3>
+        <p style="font-family: sans-serif; font-size: 0.95rem;">Zeit ist bei der Geldanlage wichtiger als Geld selbst. Jeder Monat, den du wartest, ist eine verpasste Chance. Der Zinseszins ist der „achte Weltwunder-Effekt“ – wer zu spät startet, kann den Zeitverlust später kaum noch aufholen.</p>
+      </div>
+
+      <!-- Schmerzpunkt 3 -->
+      <div style="padding: 1.5rem; background: #fff; border-left: 4px solid #c0392b; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c0392b; margin-bottom: 0.5rem;">3. Das Gefühl finanzieller Abhängigkeit</h3>
+        <p style="font-family: sans-serif; font-size: 0.95rem;">Ohne Investment bist du voll auf dein Arbeitseinkommen angewiesen. Wenn der Job wackelt oder die Kosten steigen, hast du kein Sicherheitsnetz. Investieren ist der erste Schritt raus aus dem „Hamsterrad“ hin zu echter finanzieller Gelassenheit.</p>
+      </div>
+    </div>
+
+    <p style="text-align: center; font-weight: 600; margin-top: 2rem; color: var(--navy);">
+      Die gute Nachricht: Du kannst dieses Muster heute durchbrechen. Die Börse ist kein Casino für Reiche, sondern dein mächtigstes Werkzeug, um diese Schmerzen zu beenden.
+    </p>
   </section>
 
   <!-- STORYTELLING -->
