@@ -16,6 +16,8 @@ Du sparst...
 
 und am Ende des Monats bleibt fast nichts übrig.
 
+Du weist dass du dich nicht auf die Rente verlassen kannst!
+
 
 ###
 
