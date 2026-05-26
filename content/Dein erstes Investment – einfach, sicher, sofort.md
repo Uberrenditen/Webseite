@@ -19,12 +19,12 @@ Und am Ende des Monats bleibt: SOGUT WIE NICHTS.
 
 
 
-
+&nbsp;
 Wir wurden darauf konditioniert zu glauben, Sparen sei sicher. 
 
 Das ist eine LÜGE!
 
-
+&nbsp;
 In wirklichkeit passieren genau diese Dinge 👇
 
 1. Die stille Enteignung (Inflation)
