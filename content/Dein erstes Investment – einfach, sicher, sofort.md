@@ -1,12 +1,15 @@
 +++
 title = 'Dein erstes Investment – einfach, sicher, sofort'
-date = 2026-05-26T16:58:00+01:00
+date = 2025-08-24T16:55:24+01:00
 draft = false
-description = "Du willst dein Geld für dich arbeiten lassen? In 10 Minuten richtest du deinen ersten ETF-Sparplan ein – ohne Vorwissen, ohne Stress."
+description = "Du willst dein Geld für dich arbeiten lassen, weißt aber nicht wo anfangen? In 10 Minuten richtest du deinen ersten ETF-Sparplan ein – ohne Vorkenntnisse."
 image = "/images/value-investing2.webp"
 authors = ["überrenditen"]
 avatar = "/images/a/value-investing.webp"
 +++
+
+
+
 
 <style>
   :root {
