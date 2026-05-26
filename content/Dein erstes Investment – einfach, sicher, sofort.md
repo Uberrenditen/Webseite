@@ -14,17 +14,17 @@ Du zahlst Steuern.
 
 Du sparst. 
 
-Und am Ende des Monats bleibt: SOGUT WIE NICHTS.
+Und am Ende des Monats bleibt fast nichts übrig.
 
 
 ###
 
 
-
+&nbsp;
 ### Wir wurden darauf konditioniert zu glauben, 
-### Sparen sei sicher. 
+### Sparen auf dem Bankkonto sei sicher. 
 ### Das ist eine LÜGE!
-
+&nbsp;
 
 ###
 
