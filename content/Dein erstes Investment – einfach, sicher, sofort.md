@@ -86,9 +86,6 @@ Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von
 
 ### So gehts:
 
-
-&nbsp;
-
 &nbsp;
 
 ## Schritt 1: Trade Republic-App installieren
@@ -139,7 +136,6 @@ Oder du übernimmst jetzt die Kontrolle!
 
 ###
 Die beste Zeit war vor 10 Jahren. 
-
 &nbsp;
 
 ###
