@@ -56,10 +56,13 @@ Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte En
 
 ###
 
+&nbsp;
 
 ### Die Börse ist deine einzige Chance!
 Die meisten Menschen haben Angst vor der Börse, weil sie „Zocken“ mit „Investieren“ verwechseln. 
 FALSCH!
+
+&nbsp;
 
 Du kaufst keine Lottoscheine. 
 &nbsp;
@@ -77,13 +80,17 @@ Und wenn du investiert bist, gehört ein Stück dieses Wachstums dir.
 &nbsp;
 
 
-
 Du brauchst keinen Finanzberater, der dir teure Produkte verkauft! 
 Du brauchst ein System, das läuft, während du dein Leben lebst.
 
 &nbsp;
 
+Wenn ich heute von 0 beginnen würde, dann würde ich mit einem FTSE All-World ETF beginnen. 
+Dies ist einer der beliebtesten Indizes weltweit. Er enthält über 3.700 Unternehmen aus Industrie- und Schwellenländern und deckt damit nahezu die gesamte Weltwirtschaft ab.
 
+Wenn du monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 20 Jahren investierst, baust du ein beachtliches Vermögen auf.
+
+Bei 8% sind es 295.000 EURO
 
 
 Das Depot: Eröffne bei einem Broker (wie Trade Republic) dein Depot. Dauer: 5 Minuten.
