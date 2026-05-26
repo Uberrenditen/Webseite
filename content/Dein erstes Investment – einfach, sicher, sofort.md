@@ -30,8 +30,7 @@ und am Ende des Monats bleibt fast nichts übrig.
 
 In wirklichkeit passieren genau diese Dinge 👇
 
-1. Die Preise steigen, deine Kaufkraft sinkt. 
-Wenn du dein Geld heute auf dem Konto parkst, ist es in 10 Jahren garantiert weniger wert als heute. 
+1. Die Preise steigen. Wenn du dein Geld heute auf dem Konto parkst, ist es in 10 Jahren weniger wert als heute. Deine Kaufkraft sinkt. 
 Du verlierst Geld, indem du es einfach nur „sicher“ verwahrst.
 &nbsp;
 
@@ -58,46 +57,35 @@ Investieren ist der einzige Weg, um aus dem Hamsterrad auszubrechen und echte En
 
 &nbsp;
 
-### Die Börse ist deine einzige Chance!
+### So habe ich das geändert!
 
 
 &nbsp;
 
 
 
-Kaufe Anteile an den produktivsten Unternehmen der Welt. 
-Apple, Microsoft, Amazon – die weltweite Wirtschaft arbeitet für dich. 
-
-&nbsp;
-
-
-Während du schläfst, verdienen diese Unternehmen Geld. 
-Und wenn du investiert bist, gehört ein Stück dieses Wachstums dir.
-
-&nbsp;
-
-
-Du brauchst keinen Finanzberater, der dir teure Produkte verkauft! 
-Du brauchst ein System, das läuft, während du dein Leben lebst.
-
-&nbsp;
 
 Wenn ich heute von 0 beginnen würde, dann würde ich mit einem FTSE All-World ETF beginnen. 
 Dies ist einer der beliebtesten Indizes weltweit. Er enthält über 3.700 Unternehmen aus Industrie- und Schwellenländern und deckt damit nahezu die gesamte Weltwirtschaft ab.
 
 &nbsp;
 
-Wenn du monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 20 Jahren investierst, baust du ein beachtliches Vermögen auf.
+Wenn ich monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 20 Jahren investiere, passiert folgendes:
 
 &nbsp;
 
-## Bei 8% sind es 295.000 EURO
+## Bei 8% werden daraus in 20 Jahren 295.000 EURO
 
-## In 30 Jahren wären es 745.000 EURO
+## In 30 Jahren ist dieser Wert bei 745.000 EURO
 
 &nbsp;
 
+&nbsp;
 
+### So gehts:
+
+
+&nbsp;
 
 &nbsp;
 
@@ -130,7 +118,9 @@ Wenn du monatlich 500 Euro in einen FTSE All-World ETF über einen Zeitraum von 
 
 ## Schritt 6: Zyklus festlegen
 
+&nbsp;
 
+###
 
 Ich hoffe, dass du es durchgezogen hast!
 
